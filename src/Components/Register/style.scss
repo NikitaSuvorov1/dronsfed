@@ -121,6 +121,7 @@
   height: 60px;
   color: #000;
   border: 0;
+  opacity: 0.8;
   font-family: Russo One;
   font-size: 24px;
   font-style: normal;
@@ -130,4 +131,11 @@
   margin: 30px auto;
   align-items: center;
   margin-bottom: 50px;
+  transition: opacity 0.4s;
+}
+
+.submitButton:hover {
+  box-shadow: 2px 2px 2px 2px yellowgreen;
+  opacity: 1;
+  cursor: pointer;
 }

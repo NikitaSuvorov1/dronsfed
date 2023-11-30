@@ -8,7 +8,7 @@ export const Card = ({title,text,imageURL,id}) => {
                     <p className='title'>{title}</p>
                     <p className='text'>{text}</p>
                 </div>
-                <img width={450} height={250} src={imageURL}/>
+                <img width={450} height={300} src={imageURL}/>
             </div>
     )
 }
