@@ -14,7 +14,7 @@ export const Calendar = () => {
 
     useEffect(() => {
         fetchData()
-    },[])
+    }, [])
 
     console.log(data)
 
@@ -22,7 +22,6 @@ export const Calendar = () => {
         <div className='calendar'>
             <span className='calendarTitle'>Календарь
                 мероприятий</span>
-
             <div className='calendarForm'>
                 {data ? data.map((obj) => (
                     <div className='event'>
@@ -39,7 +38,6 @@ export const Calendar = () => {
 
 
             </div>
-
 
         </div>
 

@@ -8,6 +8,8 @@ import {Info} from "./Components/Info";
 import {Calendar} from "./Components/Calendar";
 import {Course} from "./Components/Course";
 import {Form} from "./Components/Form";
+import {Footer} from "./Components/Footer";
+import {Register} from "./Components/Register";
 
 
 function App() {
@@ -25,7 +27,9 @@ function App() {
                 <Course />
             </div>
             <div className='container3'>
+                <Register />
                 <Form />
+                <Footer />
             </div>
 
         </div>

@@ -1,0 +1,52 @@
+.general {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.leftcontent {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  align-content: center;
+}
+
+.maintitle {
+  color: #FFF;
+  font-family: Orbitron;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 0;
+}
+
+.subtitle {
+  color: #FFF;
+  font-family: "Orbitron";
+  font-weight: 300;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  margin-top: -10px;
+}
+
+.text {
+  color: #00FFC2;
+  font-family: Raleway;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 145%; /* 37.7px */
+  margin: 0;
+}
+
+img {
+  align-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

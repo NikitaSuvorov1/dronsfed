@@ -1,6 +1,5 @@
 .calendar {
   background-color: #650049;
-
 }
 
 .calendarTitle {
@@ -22,16 +21,12 @@
   margin-top: 50px;
 }
 
-.event {
-}
-
 .eventText {
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: left;
 }
-
 
 .eventDate {
   color: #FFF;
@@ -54,3 +49,5 @@
 .hr {
   border-radius: 84px;
 }
+
+/*# sourceMappingURL=style.css.map */

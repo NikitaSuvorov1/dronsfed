@@ -15,15 +15,14 @@ export const Header = () => {
                 <img style={{cursor: "pointer"}} width={90} height={90} src='assets/LOGO.png'/>
                 <div className='tabs'>
                     {tabs.map((tab) => (
-                        <Link smooth={true} to={tab.name}><p className='tags'>
+                        <Link to={tab.name} smooth={true}><p className='tags'>
                             {tab.section}
                         </p></Link>
                     ))}
+
                 </div>
                 <button className='register'>Присоединиться</button>
             </div>
-            <hr/>
         </>
-
     )
 }

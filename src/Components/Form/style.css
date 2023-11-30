@@ -1,0 +1,117 @@
+.formContainer {
+  border-radius: 84px;
+  background: #110F5E;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formTitle {
+  color: #FFF;
+  text-align: center;
+  font-family: Russo One;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.formText {
+  color: #FFF;
+  padding-top: 50px;
+  text-align: center;
+  font-family: Russo One;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.questions {
+  color: #FFF;
+  text-align: center;
+  font-family: Russo One;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nameInput {
+  border-radius: 15px;
+  background: #D9D9D9;
+  width: 70%;
+  color: #898989;
+  text-align: center;
+  font-family: Russo One;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  padding: 10px 10px;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+}
+
+.emailInput {
+  border-radius: 15px;
+  background: #D9D9D9;
+  width: 70%;
+  color: #898989;
+  text-align: center;
+  font-family: Russo One;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  padding: 10px 10px;
+  margin: 30px auto;
+  outline: none;
+  border: none;
+}
+
+.textInput {
+  border-radius: 15px;
+  background: #D9D9D9;
+  width: 70%;
+  color: #898989;
+  text-align: center;
+  font-family: Russo One;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  padding: 10px 10px;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  min-height: 100px;
+  justify-items: start;
+  margin-bottom: 50px;
+}
+
+.submitButton {
+  border-radius: 36px;
+  background: var(--cyberpunk-gradient, linear-gradient(263deg, #FF0 13.57%, #00FFD1 83.02%));
+  width: 273.121px;
+  height: 60px;
+  color: #000;
+  border: 0;
+  font-family: Russo One;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

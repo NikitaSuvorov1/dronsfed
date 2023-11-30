@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+.container_header {
+  margin: 0 auto;
+  background-color: #110F5E;
+}
+
+.container {
+  margin: 0 auto;
+  background: linear-gradient(#19168C, 95%, #650049);
+  padding: 20px 100px;
+}
+
+.container2 {
+  margin: 0 auto;
+  background: #650049;
+  padding: 20px 100px;
+}
+
+.container3 {
+  margin: 0 auto;
+  background: linear-gradient(#650049, 3%, #19168C);
+  padding: 20px 100px;
+}
+
+/*# sourceMappingURL=App.css.map */
