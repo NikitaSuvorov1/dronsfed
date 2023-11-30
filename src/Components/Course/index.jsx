@@ -14,7 +14,7 @@ export const Course = () => {
                 </div>
                 <img src='assets/item 34.png' />
             </div>
-            <p className='courseFooter'>Записаться можно на <a className='href' href='tonkorag.ru/school'>tonkorag.ru/school</a></p>
+            <p className='courseFooter'>Записаться можно на <a className='href' href='https://tonkorag.ru/school'>tonkorag.ru/school</a></p>
         </div>
     )
 }
