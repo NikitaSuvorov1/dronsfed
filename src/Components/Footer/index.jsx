@@ -26,11 +26,11 @@ export  const Footer = () => {
                     ))}
                 </div>
                 <div className='footerSponsors'>
-                    <img src='assets/minsport 1.png' />
-                    <img src='assets/scale_1200 1.png' />
-                    <img src='assets/ms_logo_rgb_1_kras 1.png' />
-                    <img src='assets/-.png' />
-                    <img src='assets/drone.png' />
+                    <a href='https://minsport.gov.ru/'><img src='assets/minsport 1.png' /></a>
+                    <a href='http://duma.gov.ru/news/duma/'> <img src='assets/scale_1200 1.png' /></a>
+                    <a href='https://moscow.sport/'><img src='assets/ms_logo_rgb_1_kras 1.png' /></a>
+                    <a href='https://trurez.ru/'><img src='assets/-.png' /></a>
+                    <a href='https://dronesportsglobal.ru/'><img src='assets/drone.png' /></a>
                 </div>
             </div>
 
