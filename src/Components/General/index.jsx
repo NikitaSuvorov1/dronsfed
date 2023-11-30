@@ -6,7 +6,7 @@ export const General = () => {
             <div className='leftcontent'>
                 <p className='maintitle'>DRONE RACING</p>
                 <p className='subtitle'>kazan 2024</p>
-                <p className='text'>Взлетай выше, летай быстрее, вместе с Федерацией гонок дронов Республики
+                <p className='generalText'>Взлетай выше, летай быстрее, вместе с Федерацией гонок дронов Республики
                     Татарстан!</p>
             </div>
             <img src='assets/BOY.png'/>

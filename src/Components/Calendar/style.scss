@@ -1,13 +1,13 @@
 .calendar {
   background-color: #650049;
-
+  margin-top: 100px;
 }
 
 .calendarTitle {
   color: #FFF;
   text-align: center;
   font-family: Russo One;
-  font-size: 35px;
+  font-size: 46px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -19,7 +19,8 @@
   min-height: 500px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  margin-top: 50px;
+  margin-top: 100px;
+
 }
 
 .event {
@@ -49,6 +50,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  width: 20%;
 }
 
 .hr {

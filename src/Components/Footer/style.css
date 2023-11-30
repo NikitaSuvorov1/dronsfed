@@ -33,6 +33,7 @@
 }
 .socialwebs img {
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .secondlogo {
@@ -65,7 +66,10 @@
 
 .footerSectionName {
   transition: background-color 0.5s;
-  width: 30%;
+  width: 35%;
+  font-size: 20px;
+  transition: background-color 1s;
+  font-family: Russo One;
 }
 
 .logoSlogan {

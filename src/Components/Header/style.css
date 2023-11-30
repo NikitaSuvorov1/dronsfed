@@ -7,28 +7,52 @@
   align-items: center;
   justify-content: space-around;
   padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  background-color: #110F5E;
 }
 
 .register {
   border-radius: 30px;
   outline: none;
   border: 0;
-  font-weight: 600;
+  font-weight: 400;
   height: 60px;
   padding: 10px 20px;
   align-items: center;
-  font-size: 16px;
+  color: #000;
+  font-family: Russo One;
+  font-style: normal;
+  line-height: normal;
+  font-size: 20px;
   background: rgb(255, 248, 0);
   background: linear-gradient(263deg, rgb(255, 248, 0) 13.57%, rgb(0, 255, 209) 83%);
   color: black;
   cursor: pointer;
+  transition: box-shadow, opacity 0.4s;
+  opacity: 0.8;
+}
+
+.register:hover {
+  box-shadow: 2px 2px 2px 2px yellowgreen;
+  opacity: 1;
 }
 
 .tags {
   margin-right: 50px;
   color: white;
-  font-size: 23px;
+  font-size: 20px;
   cursor: pointer;
+  transition: color 0.2s;
+  color: #FFF;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tags:hover {
+  color: #00ffc2;
 }
 
 hr {

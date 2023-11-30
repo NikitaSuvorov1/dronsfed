@@ -35,14 +35,13 @@
   margin-top: -10px;
 }
 
-.text {
+.generalText {
   color: #00FFC2;
-  font-family: Raleway;
-  font-size: 23px;
+  font-family: Russo One;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 145%; /* 37.7px */
-  margin: 0;
+  font-weight: 400;
+  line-height: 145%; /* 34.8px */
 }
 
 img {

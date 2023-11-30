@@ -32,8 +32,10 @@
   display: flex;
   padding: 0 50px;
 
+
   img {
     margin-right: 20px;
+    cursor: pointer;
   }
 
 }
@@ -70,8 +72,10 @@
 
 .footerSectionName {
   transition: background-color 0.5s ;
-  width: 30%;
-}
+  width: 35%;
+  font-size: 20px;
+  transition: background-color 1s;
+  font-family: Russo One;}
 
 .logoSlogan {
   display: flex;
@@ -106,6 +110,7 @@
   align-items: center;
   justify-items: center;
   padding: 10px;
+
 
   img {
     cursor: pointer;

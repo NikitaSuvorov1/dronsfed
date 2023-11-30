@@ -12,7 +12,7 @@ export const Header = () => {
     return (
         <>
             <div className='header'>
-                <img style={{cursor: "pointer"}} width={90} height={90} src='assets/LOGO.png'/>
+                <img onClick={() => window.scrollTo(0,0)} style={{cursor: "pointer"}} width={90} height={90} src='assets/LOGO.png'/>
                 <div className='tabs'>
                     {tabs.map((tab) => (
                         <Link to={tab.name} smooth={true}><p className='tags'>
@@ -21,7 +21,7 @@ export const Header = () => {
                     ))}
 
                 </div>
-                <button className='register'>Присоединиться</button>
+                <Link to={'formTitle'} smooth={true}><button className='register'>Присоединиться</button></Link>
             </div>
         </>
     )
