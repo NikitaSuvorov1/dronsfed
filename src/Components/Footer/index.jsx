@@ -1,19 +1,20 @@
 import styles from './style.scss'
-export  const Footer = () => {
 
-    const sections = ["Календарь",'Курсы','О нас']
+export const Footer = () => {
+
+    const sections = ["Календарь", 'Курсы', 'О нас']
 
     return (
         <div className='footer'>
             <div className='footerLeft'>
                 <p className='footerText'>Следите за гонками дронов в социальных сетях</p>
                 <div className='socialwebs'>
-                    <img src='assets/VK.png' />
-                    <img src='assets/TELEGRAM.png' />
-                    <img src='assets/YOUTUBE.png' />
+                    <a href='https://vk.com/club223653806'> <img src='assets/VK.png'/></a>
+                    <a href='https://t.me/tatarstan_drons'><img src='assets/TELEGRAM.png'/></a>
+                    <a href='https://www.youtube.com/channel/UCUXqBaImWzbHHFMTUsGWAEQ'><img src='assets/YOUTUBE.png'/></a>
                 </div>
                 <div className='logoSlogan'>
-                    <img className='secondlogo' src='assets/logo_2.png' />
+                    <img className='secondlogo' src='assets/logo_2.png'/>
                     <p className='footerSlogan'>© 2023-2024 DRONE RACING RT</p>
                 </div>
 
@@ -26,11 +27,11 @@ export  const Footer = () => {
                     ))}
                 </div>
                 <div className='footerSponsors'>
-                    <a href='https://minsport.gov.ru/'><img src='assets/minsport 1.png' /></a>
-                    <a href='http://duma.gov.ru/news/duma/'> <img src='assets/scale_1200 1.png' /></a>
-                    <a href='https://moscow.sport/'><img src='assets/ms_logo_rgb_1_kras 1.png' /></a>
-                    <a href='https://trurez.ru/'><img src='assets/-.png' /></a>
-                    <a href='https://dronesportsglobal.ru/'><img src='assets/drone.png' /></a>
+                    <a href='https://minsport.gov.ru/'><img src='assets/minsport 1.png'/></a>
+                    <a href='http://duma.gov.ru/news/duma/'> <img src='assets/scale_1200 1.png'/></a>
+                    <a href='https://moscow.sport/'><img src='assets/ms_logo_rgb_1_kras 1.png'/></a>
+                    <a href='https://trurez.ru/'><img src='assets/-.png'/></a>
+                    <a href='https://dronesportsglobal.ru/'><img src='assets/drone.png'/></a>
                 </div>
             </div>
 
