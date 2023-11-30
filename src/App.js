@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import {useEffect, useState} from "react";
+import axios from "axios";
+import {Header} from "./Components/Header";
+import {General} from "./Components/General";
+import styles from './App.scss'
+import {Info} from "./Components/Info";
+import {Calendar} from "./Components/Calendar";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+    return (
+        <div className="App">
+            <div className='container'>
+                <Header/>
+                <General/>
+                <Info/>
+            </div>
+            <div className='container2'>
+                <Calendar />
+            </div>
+
+        </div>
+
+    )
+
 }
+
 
 export default App;
