@@ -1,0 +1,59 @@
+.course
+{
+
+}
+
+.text1 {
+  color: #FFF;
+  text-align: center;
+  font-family: Russo One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%;
+}
+
+.courseText {
+  align-items: center;
+  width: 50%;
+}
+
+.courseTitle {
+  color: #FFF;
+
+  text-align: center;
+  font-family: Russo One;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 150px;
+}
+
+.courseInfo {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.courseFooter {
+  color: #D9D9D9;
+
+  font-family: Russo One;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%; /* 43.5px */
+}
+
+
+.href {
+  color: #FAFF00;
+  font-family: Russo One;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%;
+  text-transform: uppercase;
+  text-decoration: none;
+}

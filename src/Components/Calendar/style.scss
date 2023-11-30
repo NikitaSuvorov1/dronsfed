@@ -1,0 +1,56 @@
+.calendar {
+  background-color: #650049;
+
+}
+
+.calendarTitle {
+  color: #FFF;
+  text-align: center;
+  font-family: Russo One;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 20px;
+}
+
+.calendarForm {
+  background: linear-gradient(180deg, #1A198A 0%, #000 100%);
+  min-height: 500px;
+  border-radius: 60px;
+  margin-top: 50px;
+}
+
+.event {
+  align-items: center;
+  align-content: center;
+}
+
+.eventText {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.eventDate {
+  color: #FFF;
+  font-family: Russo One;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.eventName {
+  color: #FFF;
+  font-family: Russo One;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hr {
+  width: 80%;
+}
