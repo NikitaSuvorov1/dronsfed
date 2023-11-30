@@ -4,8 +4,8 @@ import {General} from "../General";
 
 export const Header = () => {
 
-    const tabs = [{"section": 'Календарь', "name": "calendar"},
-        {"section": 'Курсы', "name": "course"},
+    const tabs = [{"section": 'Календарь', "name": "calendarTitle"},
+        {"section": 'Курсы', "name": "formTitle"},
         {"section": 'О нас', "name": "info"}
     ]
 
