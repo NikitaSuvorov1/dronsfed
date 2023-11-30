@@ -7,7 +7,7 @@ export const Calendar = () => {
     const [data, setData] = useState([])
 
     const fetchData = async () => {
-        await axios.get('http://kevin12312312.pythonanywhere.com/events/').then(res => {
+        await axios.get('https://kevin12312312.pythonanywhere.com/events/').then(res => {
             setData(res.data)
         })
     }
