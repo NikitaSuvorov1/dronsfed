@@ -6,7 +6,8 @@ export const Header = () => {
 
     const tabs = [{"section": 'Календарь', "name": "calendarTitle"},
         {"section": 'Курсы', "name": "formTitle"},
-        {"section": 'О нас', "name": "info"}
+        {"section": 'О нас', "name": "info"},
+        {"section":"Контанты","name":"footer"}
     ]
 
     return (
