@@ -5,10 +5,10 @@ import axios from "axios";
 export const Form = () => {
 
     const { register, handleSubmit } = useForm()
-    const onSubmit = (data) => {
-        console.log(data)
-        axios.post('http://kevin12312312.pythonanywhere.com/faq/',data)
-    }
+    // const onSubmit = (data) => {
+    //     console.log(data)
+    //     axios.post('http://kevin12312312.pythonanywhere.com/faq/',data)
+    // }
 
     const tabs = [
         {
@@ -51,7 +51,7 @@ export const Form = () => {
                 {tabs.map((obj) =>
                     <Dropdown title={obj.title} content={obj.description} />
                 )}
-                <form onSubmit={handleSubmit(onSubmit)} className='form'>
+                <form className='form'>
                     <p className='questions'>Остались вопросы?</p>
                     <input className='nameInput' {...register("firstName")} type={"text"} placeholder={"Имя"}/>
                     <input className='emailInput' type={"text"} {...register("email")} placeholder={"E-mail"}/>

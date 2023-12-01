@@ -7,10 +7,10 @@ export const Register = () => {
 
     const { register, handleSubmit } = useForm()
     const [userData,setUserData] = useState({})
-    const onSubmit = (data) => {
-        setUserData(data)
-        axios.post('http://kevin12312312.pythonanywhere.com/faq/',data)
-    }
+    // const onSubmit = (data) => {
+    //     setUserData(data)
+    //     axios.post('http://kevin12312312.pythonanywhere.com/faq/',data)
+    // }
 
     const tabs = [
         {
@@ -50,7 +50,7 @@ export const Register = () => {
             <p className='formTitle'>Присоединяйся к нам!</p>
             <div className='formContainer'>
 
-                <form onSubmit={handleSubmit(onSubmit)} className='form'>
+                <form  className='form'>
                     <p className='RegisterSubtitle'>Вступить в Федерацию гонок дронов
                         Республики Татарстан</p>
                     <p className='questions'>Ваше ФИО</p>

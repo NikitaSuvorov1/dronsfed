@@ -1,9 +1,12 @@
 import styles from './style.scss'
+import {Link} from "react-scroll";
 
 export const Footer = () => {
 
-    const sections = ["Календарь", 'Курсы', 'О нас']
-
+    const tabs = [{"section": 'Календарь', "name": "calendarTitle"},
+        {"section": 'Курсы', "name": "formTitle"},
+        {"section": 'О нас', "name": "info"}
+    ]
     return (
         <div className='footer'>
             <div className='footerLeft'>
@@ -22,8 +25,8 @@ export const Footer = () => {
             <div className='footerRight'>
                 <p className='footerName'> Drone RACING RT</p>
                 <div className='footerTabs'>
-                    {sections.map((obj) => (
-                        <p className='footerSectionName'>{obj}</p>
+                    {tabs.map((obj) => (
+                        <Link to={obj.name} smooth={true}><p className='footerSectionName'>{obj.section}</p></Link>
                     ))}
                 </div>
                 <div className='footerSponsors'>
