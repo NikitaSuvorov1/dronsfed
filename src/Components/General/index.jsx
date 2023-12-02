@@ -9,6 +9,7 @@ export const General = () => {
                 <p className={styles.generalText}>Взлетай выше, летай быстрее, вместе с Федерацией гонок дронов Республики
                     Татарстан!</p>
             </div>
+            <button className={styles.register}>Присоединиться</button>
             <img src='assets/BOY.png'/>
         </div>
     )

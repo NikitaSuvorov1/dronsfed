@@ -24,8 +24,34 @@
 
 }
 
+@media screen and (max-width: 400px) {
+  .root {
+    text-align: center;
+    margin: 0 auto;
+
+    .container_header {
+      background-color: #110F5E;
+      margin: 0 auto;
+    }
+
+    .container {
+      background: linear-gradient(#19168C, 95%, #650049);
+      padding: 10px 0;
+    }
 
 
+    .container2 {
+      background: #650049;
+      padding: 10px 0;
+    }
+
+    .container3 {
+      background: linear-gradient(#650049, 3%, #19168C);
+      padding: 10px 0;
+    }
+  }
+
+}
 
 
 

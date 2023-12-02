@@ -1,52 +1,119 @@
 
 .general {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+
+
+  .leftcontent {
+    text-align: left;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    align-content: center;
   }
 
-.leftcontent {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 50%;
-  align-content: center;
-}
 
+  .maintitle {
+    color: #FFF;
+    font-family: Orbitron;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 0;
+  }
 
-.maintitle {
-  color: #FFF;
-  font-family: Orbitron;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  margin: 0;
-}
+  .subtitle {
+    color: #FFF;
+    font-family: 'Orbitron';
+    font-weight: 300;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    margin-top: -10px;
+  }
 
-.subtitle {
-  color: #FFF;
-  font-family: 'Orbitron';
-  font-weight: 300;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 100;
-  line-height: normal;
-  margin-top: -10px;
-}
+  .generalText {
+    color: #00FFC2;
+    font-family: Russo One;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 34.8px */
 
-.generalText {
-  color: #00FFC2;
-  font-family: Russo One;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 145%; /* 34.8px */
+  }
+
+  img {
+    align-content: center;
+  }
 
 }
 
-img {
-  align-content: center;
+@media screen and (max-width: 400px) {
+
+  .general {
+    align-items: center;
+    text-align: center;
+    display: block;
+
+    img {
+      display: none;
+    }
+
+    .generalText {
+      margin: 0 auto;
+      font-size: 12px;
+      margin-top: 20px;
+      text-align: center;
+      width: 80%;
+    }
+
+    .maintitle {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 55px;
+      padding: 10px 0;
+    }
+
+    .subtitle {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .leftcontent {
+      display: inline;
+    }
+
+    .register {
+      border-radius: 30px;
+      outline: none;
+      border: 0;
+      font-weight: 400;
+      height: 60px;
+      margin-top: 30px;
+      align-items: center;
+      font-family: Russo One;
+      font-style: normal;
+      line-height: normal;
+      font-size: 20px;
+      background: rgb(255, 248, 0);
+      background: linear-gradient(263deg, rgba(255, 248, 0, 1) 13.57%, rgba(0, 255, 209, 1) 83%);
+      color: black;
+      cursor: pointer;
+      box-shadow: yellowgreen;
+      transition: all 0.5s ease-in-out;
+      opacity: 0.8;
+    }
+
+    .register:hover {
+      box-shadow: 5px 2px 5px 1px yellowgreen;
+      opacity: 1;
+    }
+  }
+
 }
+

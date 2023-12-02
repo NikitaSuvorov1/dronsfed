@@ -55,60 +55,61 @@
   }
 }
 
-//.calendar {
-//  background-color: #650049;
-//  margin-top: 100px;
-//}
-//
-//.calendarTitle {
-//  color: #FFF;
-//  text-align: center;
-//  font-family: Russo One;
-//  font-size: 46px;
-//  font-style: normal;
-//  font-weight: 400;
-//  line-height: normal;
-//  margin-top: 20px;
-//}
-//
-//.calendarForm {
-//  background: linear-gradient(180deg, #1A198A 0%, #000 100%);
-//  min-height: 500px;
-//  border-radius: 84px;
-//  margin-top: 100px;
-//
-//}
-//
-//.event {
-//}
-//
-//.eventText {
-//  display: flex;
-//  justify-content: space-around;
-//  align-items: center;
-//  text-align: left;
-//}
-//
-//
-//.eventDate {
-//  color: #FFF;
-//  font-family: Russo One;
-//  font-size: 30px;
-//  font-style: normal;
-//  font-weight: 400;
-//  line-height: normal;
-//}
-//
-//.eventName {
-//  color: #FFF;
-//  font-family: Russo One;
-//  font-size: 22px;
-//  font-style: normal;
-//  font-weight: 400;
-//  line-height: normal;
-//  width: 20%;
-//}
-//
-//.hr {
-//  border-radius: 84px;
-//}
+
+
+@media screen and (max-width: 400px) {
+  .root {
+    background-color: #650049;
+    margin: 0 auto;
+
+    .calendarTitle {
+      color: #FFF;
+      text-align: center;
+      font-family: Russo One;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .calendarForm {
+      background: linear-gradient(180deg, #1A198A 0%, #000 100%);
+      margin-top: 100px;
+      border-radius: 0;
+    }
+
+
+    .eventText {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: left;
+    }
+
+
+    .eventDate {
+      color: #FFF;
+      font-family: Russo One;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .eventName {
+      color: #FFF;
+      font-family: Russo One;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .event {
+    }
+
+    .hr {
+      border-radius: 84px;
+    }
+  }
+}

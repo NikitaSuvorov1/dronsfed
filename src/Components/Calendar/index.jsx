@@ -16,7 +16,6 @@ export const Calendar = () => {
         fetchData()
     }, [])
 
-    console.log(data)
 
     return (
         <div className='calendar'>
@@ -25,9 +24,9 @@ export const Calendar = () => {
                 мероприятий</span>
                 <div className={styles.calendarForm}>
                     {data ? data.map((obj) => (
-                        <div className={styles.event}>
+                        <div key={obj.title} className={styles.event}>
                             <div className={styles.eventText}>
-                                <p className={styles.eventDate}>
+                                <p  className={styles.eventDate}>
                                     {obj.dateTime}
                                 </p>
                                 <p className={styles.eventName}>{obj.summary}</p>

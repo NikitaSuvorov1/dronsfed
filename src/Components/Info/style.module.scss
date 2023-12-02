@@ -1,5 +1,4 @@
 
-
 .info {
   margin-top: 140px;
   padding: 20px;
@@ -26,4 +25,31 @@
   line-height: normal;
 }
 
+}
+
+@media screen and (max-width: 400px) {
+  .info {
+    margin-top: 300px;
+
+    .titles {
+      color: #FFF;
+      text-align: center;
+      font-family: Russo One;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .infofooterText {
+      color: #FFF;
+      text-align: center;
+      font-family: Russo One;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+    }
+  }
 }

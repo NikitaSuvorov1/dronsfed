@@ -28,7 +28,7 @@ export const Footer = () => {
                     <p className={styles.footerName}> Drone RACING RT</p>
                     <div className={styles.footerTabs}>
                         {tabs.map((obj) => (
-                            <Link offset={-100} to={obj.name} smooth={true}><p className={styles.footerSectionName}>{obj.section}</p>
+                            <Link offset={-100} to={obj.name} smooth={true}><p key={obj.name} className={styles.footerSectionName}>{obj.section}</p>
                             </Link>
                         ))}
                     </div>
