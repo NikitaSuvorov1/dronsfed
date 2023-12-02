@@ -43,7 +43,7 @@
   align-content: center;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
   .general {
     align-items: center;
     text-align: center;

@@ -59,7 +59,7 @@
   color: white;
   background: linear-gradient(263deg, rgb(255, 248, 0) 13.57%, rgb(0, 255, 209) 83%);
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
   .root .root {
     display: flex;
     margin-top: -10px;
