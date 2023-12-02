@@ -98,7 +98,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .footer {
     display: block;
   }

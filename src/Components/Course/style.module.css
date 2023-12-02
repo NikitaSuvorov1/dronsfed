@@ -47,7 +47,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .course {
     display: block;
     margin: 0 auto;
