@@ -7,45 +7,39 @@
   display: flex;
   padding: 20px 0;
 }
-
-.footerText {
+.footer .footerText {
   text-align: left;
   align-items: flex-start;
   padding: 50px;
   color: #FFF;
-  font-family: Russo One;
+  font-family: Russo One, serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
   line-height: 145%; /* 37.7px */
   width: 50%;
 }
-
-.footerLeft {
+.footer .footerLeft {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-
-.socialwebs {
+.footer .socialwebs {
   display: flex;
   padding: 0 50px;
 }
-.socialwebs img {
+.footer .socialwebs img {
   margin-right: 20px;
   cursor: pointer;
 }
-
-.secondlogo {
+.footer .secondlogo {
   padding: 50px;
 }
-
-.footerRight {
+.footer .footerRight {
   padding: 20px 30px;
   text-align: left;
 }
-
-.footerName {
+.footer .footerName {
   color: #626262;
   font-family: Russo One;
   font-size: 15px;
@@ -53,8 +47,7 @@
   font-weight: 400;
   line-height: 145%;
 }
-
-.footerTabs {
+.footer .footerTabs {
   color: #FFF;
   font-family: Russo One;
   font-size: 20px;
@@ -63,21 +56,18 @@
   line-height: 145%; /* 29px */
   text-transform: uppercase;
 }
-
-.footerSectionName {
+.footer .footerSectionName {
   transition: background-color 0.5s;
   width: 35%;
   font-size: 20px;
   transition: background-color 1s;
   font-family: Russo One;
 }
-
-.logoSlogan {
+.footer .logoSlogan {
   display: flex;
   align-items: center;
 }
-
-.footerSlogan {
+.footer .footerSlogan {
   color: #FFF;
   margin-left: -30px;
   font-family: Russo One;
@@ -86,16 +76,14 @@
   font-weight: 400;
   line-height: 145%; /* 29px */
 }
-
-.footerSectionName:hover {
+.footer .footerSectionName:hover {
   flex-shrink: 0;
   cursor: pointer;
   text-align: center;
   border: 2px;
   background-color: rgb(255, 0, 214);
 }
-
-.footerSponsors {
+.footer .footerSponsors {
   border-radius: 41px;
   background: #D9D9D9;
   max-width: 500px;
@@ -106,8 +94,8 @@
   justify-items: center;
   padding: 10px;
 }
-.footerSponsors img {
+.footer .footerSponsors img {
   cursor: pointer;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.module.css.map */

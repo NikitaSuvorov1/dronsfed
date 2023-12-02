@@ -4,24 +4,20 @@
   margin-top: 140px;
   align-items: center;
 }
-
-.alternativeCard
-{
+.card .alternativeCard {
   display: flex;
   justify-content: space-around;
   margin-top: 140px;
   align-items: center;
   flex-direction: row-reverse;
 }
-
-.cardLeft {
+.card .cardLeft {
   width: 40%;
   text-align: left;
 }
-
-.title {
+.card .title {
   color: #FAFF00;
-  font-family:  Russo One;
+  font-family: Russo One;
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
@@ -29,13 +25,13 @@
   text-transform: uppercase;
   margin-bottom: 0;
 }
-
-.text {
+.card .text {
   color: #FFF;
-  font-family: Russo  one;
+  font-family: Russo one;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 145%; /* 37.7px */
 }
 
+/*# sourceMappingURL=style.css.map */

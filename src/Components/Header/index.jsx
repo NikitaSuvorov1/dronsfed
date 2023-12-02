@@ -1,29 +1,32 @@
-import styles from './style.scss'
-import {Link, animateScroll as scroll} from "react-scroll";
+import styles from './style.module.scss'
+import {Link, animateScroll as scroll, animateScroll} from "react-scroll";
 import {General} from "../General";
+
 
 export const Header = () => {
 
-    const tabs = [{"section": 'Календарь', "name": "calendarTitle"},
-        {"section": 'Курсы', "name": "formTitle"},
-        {"section": 'О нас', "name": "info"},
-        {"section":"Контанты","name":"footer"}
+    const tabs = [{"section": 'Календарь', "height": 2400},
+        {"section": 'Курсы', "height": 3200},
+        {"section": 'О нас', "height": 500},
+        {"section":"Контанты","height":6300}
     ]
 
+
+
     return (
-        <>
-            <div className='header'>
+        <div className={styles.root}>
+            <div className={styles.root}>
                 <Link to={'container'} smooth={true}><img  style={{cursor: "pointer"}} width={90} height={90} src='assets/LOGO.png'/></Link>
-                <div className='tabs'>
+                <div className={styles.tabs}>
                     {tabs.map((tab) => (
-                        <Link to={tab.name} smooth={true}><p className='tags'>
+                        <Link to={tab.name} smooth={true}><p onClick={() => animateScroll.scrollTo(tab.height)} className={styles.tags}>
                             {tab.section}
                         </p></Link>
                     ))}
 
                 </div>
-                <Link to={'formTitle'} smooth={true}><button className='register'>Присоединиться</button></Link>
+                <Link to={'formTitle'} smooth={true}><button className={styles.register}>Присоединиться</button></Link>
             </div>
-        </>
+        </div>
     )
 }

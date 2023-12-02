@@ -1,10 +1,9 @@
-import './App.scss';
 import {useEffect, useState} from "react";
 import axios from "axios";
 import  {BtnScrollUp} from "./Components/ScrollButton";
 import {Header} from "./Components/Header";
 import {General} from "./Components/General";
-import styles from './App.scss'
+import styles from './App.module.scss'
 import {Info} from "./Components/Info";
 import {Calendar} from "./Components/Calendar";
 import {Course} from "./Components/Course";
@@ -21,18 +20,17 @@ function App() {
 
 
     return (
-        <div className="App">
-            <div className='container_header'><Header/></div>
-            <div className='container'>
+        <div className={styles.root}>
+            <div className={styles.container_header}><Header/></div>
+            <div className={styles.container}>
                 <General/>
                 <Info/>
-
             </div>
-            <div className='container2'>
+            <div className={styles.container2}>
                 <Calendar />
                 <Course />
             </div>
-            <div className='container3'>
+            <div className={styles.container3}>
                 <Register />
                 <Form />
                 <Footer />

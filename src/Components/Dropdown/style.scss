@@ -1,3 +1,4 @@
+
 .tab {
   position: relative;
   margin-bottom: 18px;
@@ -16,6 +17,7 @@
   opacity: 0;
   z-index: -1;
 }
+
 .tab label {
   position: relative;
   display: block;
@@ -33,9 +35,11 @@
   text-align: left;
   margin-top: 15px;
 }
+
 .blue label {
   background: #2980b9;
 }
+
 .tab-content {
   max-height: 0;
   overflow: hidden;
@@ -44,9 +48,10 @@
   transition: max-height 0.35s;
 
 }
+
 .tab-content p {
   margin: 0 auto;
-background-color: rgba(156, 156, 156, 1);
+  background-color: rgba(156, 156, 156, 1);
   border-radius: 20px;
   color: #000;
   font-family: Russo One;
@@ -57,6 +62,7 @@ background-color: rgba(156, 156, 156, 1);
   font-weight: 400;
   line-height: normal;
 }
+
 /* :active */
 .tab.active .tab-content {
   max-height: 100vh;
@@ -69,7 +75,6 @@ background-color: rgba(156, 156, 156, 1);
   cursor: pointer;
   top: 27px
 }
-
 
 
 /* Icon */
@@ -94,3 +99,5 @@ background-color: rgba(156, 156, 156, 1);
 .tab.active label::after {
   transform: rotate(180deg);
 }
+
+

@@ -1,4 +1,4 @@
-import styles from './style.scss'
+import styles from './style.module.scss'
 import {Dropdown} from "../Dropdown";
 import { useForm } from "react-hook-form"
 import axios from "axios";
@@ -44,23 +44,23 @@ export const Form = () => {
     ];
 
     return (
-        <>
-            <p className='formTitle'>Часто задаваемые вопросы</p>
-            <div className='formContainer'>
-                <p className='formText'>Выберите из придложенного</p>
+        <div className={styles.root}>
+            <p className={styles.formTitle}>Часто задаваемые вопросы</p>
+            <div className={styles.formContainer}>
+                <p className={styles.formText}>Выберите из придложенного</p>
                 {tabs.map((obj) =>
                     <Dropdown title={obj.title} content={obj.description} />
                 )}
-                <form className='form'>
-                    <p className='questions'>Остались вопросы?</p>
-                    <input className='nameInput' {...register("firstName")} type={"text"} placeholder={"Имя"}/>
-                    <input className='emailInput' type={"text"} {...register("email")} placeholder={"E-mail"}/>
-                    <input className='textInput' type={"text"} {...register("message")} placeholder={"Ваше сообщение"}/>
-                    <button className='submitButton'>Отправить</button>
+                <form className={styles.form}>
+                    <p className={styles.questions}>Остались вопросы?</p>
+                    <input className={styles.nameInput} {...register("firstName")} type={"text"} placeholder={"Имя"}/>
+                    <input className={styles.emailInput} type={"text"} {...register("email")} placeholder={"E-mail"}/>
+                    <input className={styles.textInput} type={"text"} {...register("message")} placeholder={"Ваше сообщение"}/>
+                    <button className={styles.submitButton}>Отправить</button>
                 </form>
             </div>
 
 
-        </>
+        </div>
     )
 }

@@ -1,4 +1,4 @@
-import styles from './style.scss'
+import styles from './style.module.scss'
 import {Dropdown} from "../Dropdown";
 import { useForm } from "react-hook-form"
 import axios from "axios";
@@ -46,25 +46,24 @@ export const Register = () => {
     ];
 
     return (
-        <>
-            <p className='formTitle'>Присоединяйся к нам!</p>
-            <div className='formContainer'>
-
-                <form  className='form'>
-                    <p className='RegisterSubtitle'>Вступить в Федерацию гонок дронов
+        <div className={styles.root}>
+            <p className={styles.formTitle}>Присоединяйся к нам!</p>
+            <div className={styles.formContainer}>
+                <form  className={styles.form}>
+                    <p className={styles.RegisterSubtitle}>Вступить в Федерацию гонок дронов
                         Республики Татарстан</p>
-                    <p className='questions'>Ваше ФИО</p>
-                    <input className='nameInput' {...register("firstName")} type={"text"} placeholder={"Имя"}/>
-                    <input className='nameInput' {...register("surName")} type={"text"} placeholder={"Фамилия"}/>
-                    <input className='nameInput' {...register("lastName")} type={"text"} placeholder={"Отчество"}/>
-                    <p className='questions'>Email и телефон</p>
-                    <input className='nameInput' type={"text"} {...register("email")} placeholder={"E-mail"}/>
-                    <input className='nameInput' type={"text"} {...register("phone")} placeholder={"Телефон"}/>
-                    <button className='submitButton'>Отправить</button>
+                    <p className={styles.questions}>Ваше ФИО</p>
+                    <input className={styles.nameInput} {...register("firstName")} type={"text"} placeholder={"Имя"}/>
+                    <input className={styles.nameInput} {...register("surName")} type={"text"} placeholder={"Фамилия"}/>
+                    <input className={styles.nameInput} {...register("lastName")} type={"text"} placeholder={"Отчество"}/>
+                    <p className={styles.questions}>Email и телефон</p>
+                    <input className={styles.nameInput} type={"text"} {...register("email")} placeholder={"E-mail"}/>
+                    <input className={styles.nameInput} type={"text"} {...register("phone")} placeholder={"Телефон"}/>
+                    <button className={styles.submitButton}>Отправить</button>
                 </form>
             </div>
 
 
-        </>
+        </div>
     )
 }

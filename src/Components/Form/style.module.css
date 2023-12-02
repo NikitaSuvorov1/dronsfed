@@ -1,17 +1,13 @@
-.formContainer {
+.root .formContainer {
   border-radius: 84px;
   background: #110F5E;
 }
-
-.form {
+.root .form {
   display: flex;
   flex-direction: column;
 }
-
-.formTitle {
+.root .formTitle {
   color: #FFF;
-  margin-top: 100px;
-  margin-bottom: 80px;
   text-align: center;
   font-family: Russo One;
   font-size: 46px;
@@ -19,19 +15,17 @@
   font-weight: 400;
   line-height: normal;
 }
-
-.formText {
+.root .formText {
   color: #FFF;
   padding-top: 50px;
   text-align: center;
-  font-family: Russo One, sans-serif;
+  font-family: Russo One;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-
-.questions {
+.root .questions {
   color: #FFF;
   text-align: center;
   font-family: Russo One;
@@ -40,26 +34,11 @@
   font-weight: 400;
   line-height: normal;
 }
-
-.RegisterSubtitle {
-  color: #FFF;
-  text-align: center;
-  font-family: Russo One;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  width: 60%;
-  margin: 50px auto;
-  text-align: center;
-}
-
-.nameInput {
+.root .nameInput {
   border-radius: 15px;
   background: #D9D9D9;
   width: 70%;
   color: #898989;
-
   text-align: center;
   font-family: Russo One;
   font-size: 24px;
@@ -67,19 +46,16 @@
   font-weight: 400;
   line-height: normal;
   text-align: left;
-  padding: 10px 10px ;
-  margin: 10px auto;
+  padding: 10px 10px;
+  margin: 0 auto;
   outline: none;
   border: none;
-
 }
-
-.emailInput {
+.root .emailInput {
   border-radius: 15px;
   background: #D9D9D9;
   width: 70%;
   color: #898989;
-
   text-align: center;
   font-family: Russo One;
   font-size: 24px;
@@ -87,18 +63,16 @@
   font-weight: 400;
   line-height: normal;
   text-align: left;
-  padding: 10px 10px ;
+  padding: 10px 10px;
   margin: 30px auto;
   outline: none;
   border: none;
 }
-
-.textInput {
+.root .textInput {
   border-radius: 15px;
   background: #D9D9D9;
   width: 70%;
   color: #898989;
-
   text-align: center;
   font-family: Russo One;
   font-size: 24px;
@@ -106,7 +80,7 @@
   font-weight: 400;
   line-height: normal;
   text-align: left;
-  padding: 10px 10px ;
+  padding: 10px 10px;
   margin: 0 auto;
   outline: none;
   border: none;
@@ -114,28 +88,28 @@
   justify-items: start;
   margin-bottom: 50px;
 }
-
-.submitButton {
+.root .submitButton {
   border-radius: 36px;
-  background: var(--cyberpunk-gradient, linear-gradient(263deg, #FF0 13.57%, #00FFD1 83.02%));width: 273.121px;
+  background: var(--cyberpunk-gradient, linear-gradient(263deg, #FF0 13.57%, #00FFD1 83.02%));
+  width: 273.121px;
   height: 60px;
   color: #000;
   border: 0;
-  opacity: 0.8;
-  font-family: Russo One;
+  font-family: "Russo One";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   outline: none;
-  margin: 30px auto;
+  margin: 0 auto;
   align-items: center;
   margin-bottom: 50px;
-  transition: opacity 0.4s;
+  opacity: 0.8;
+  transition: opacity 1s;
 }
-
-.submitButton:hover {
+.root .submitButton:hover {
   box-shadow: 2px 2px 2px 2px yellowgreen;
   opacity: 1;
-  cursor: pointer;
 }
+
+/*# sourceMappingURL=style.module.css.map */

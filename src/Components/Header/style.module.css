@@ -1,8 +1,4 @@
-.tabs {
-  display: flex;
-}
-
-.header {
+.root {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -11,9 +7,12 @@
   width: 100%;
   background-color: #110F5E;
   z-index: 1;
+  margin-top: 30px;
 }
-
-.register {
+.root .tabs {
+  display: flex;
+}
+.root .register {
   border-radius: 30px;
   outline: none;
   border: 0;
@@ -33,13 +32,11 @@
   transition: box-shadow, opacity 0.4s;
   opacity: 0.8;
 }
-
-.register:hover {
+.root .register:hover {
   box-shadow: 2px 2px 2px 2px yellowgreen;
   opacity: 1;
 }
-
-.tags {
+.root .tags {
   margin-right: 50px;
   color: white;
   font-size: 20px;
@@ -51,12 +48,10 @@
   font-weight: 400;
   line-height: normal;
 }
-
-.tags:hover {
+.root .tags:hover {
   color: #00ffc2;
 }
-
-hr {
+.root hr {
   color: white;
   background: linear-gradient(263deg, rgb(255, 248, 0) 13.57%, rgb(0, 255, 209) 83%);
 }

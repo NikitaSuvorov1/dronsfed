@@ -1,4 +1,8 @@
-.titles {
+.info {
+  margin-top: 140px;
+  padding: 20px;
+}
+.info .titles {
   color: #FFF;
   text-align: center;
   font-family: Russo One;
@@ -7,13 +11,7 @@
   font-weight: 400;
   line-height: normal;
 }
-
-.info {
-  margin-top: 140px;
-  padding: 20px;
-}
-
-.infofooterText {
+.info .infofooterText {
   color: #FFF;
   margin-top: 80px;
   text-align: center;
@@ -23,3 +21,5 @@
   font-weight: 400;
   line-height: normal;
 }
+
+/*# sourceMappingURL=style.css.map */

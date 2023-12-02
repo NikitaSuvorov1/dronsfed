@@ -1,4 +1,4 @@
-import styles from './style.scss'
+import styles from './style.module.scss'
 import {Card} from "../Card";
 
 export const Info = () => {
@@ -25,14 +25,14 @@ export const Info = () => {
     ]
 
     return (
-        <div className='info'>
-            <span className='titles'>
+        <div className={styles.info}>
+            <span className={styles.titles}>
                     Готов ли ты окунуться в захватывающий мир скорости, адреналина и технологий?
                 </span>
             {descriptions.map((obj) => (
                 <Card id={obj.id} title={obj.title} text={obj.text} imageURL={obj.imageURL} />
             ))}
-            <p className='infofooterText'>Присоединяйся к нам и открой для себя новую волнующую гоночную эпоху в республике Татарстан!</p>
+            <p className={styles.infofooterText}>Присоединяйся к нам и открой для себя новую волнующую гоночную эпоху в республике Татарстан!</p>
         </div>
     )
 }

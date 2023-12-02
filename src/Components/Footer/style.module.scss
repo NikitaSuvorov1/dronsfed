@@ -1,0 +1,120 @@
+.footer {
+  border-radius: 84px;
+  width: 100%;
+  background: #110F5E;
+  height: 598px;
+  margin-top: 100px;
+  display: flex;
+  padding: 20px 0;
+
+
+  .footerText {
+    text-align: left;
+    align-items: flex-start;
+    padding: 50px;
+    color: #FFF;
+
+    font-family: Russo One, serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 37.7px */
+    width: 50%;
+  }
+
+  .footerLeft {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .socialwebs {
+    display: flex;
+    padding: 0 50px;
+
+
+    img {
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+  }
+
+  .secondlogo {
+    padding: 50px;
+  }
+
+
+  .footerRight {
+    padding: 20px 30px;
+    text-align: left;
+  }
+
+  .footerName {
+    color: #626262;
+
+    font-family: Russo One;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+  }
+
+  .footerTabs {
+    color: #FFF;
+    font-family: Russo One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 29px */
+    text-transform: uppercase;
+  }
+
+  .footerSectionName {
+    transition: background-color 0.5s;
+    width: 35%;
+    font-size: 20px;
+    transition: background-color 1s;
+    font-family: Russo One;
+  }
+
+  .logoSlogan {
+    display: flex;
+    align-items: center;
+  }
+
+  .footerSlogan {
+    color: #FFF;
+    margin-left: -30px;
+    font-family: Russo One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 29px */
+  }
+
+  .footerSectionName:hover {
+    flex-shrink: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 2px;
+    background-color: rgba(255, 0, 214, 1);
+  }
+
+  .footerSponsors {
+    border-radius: 41px;
+    background: #D9D9D9;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+
+
+    img {
+      cursor: pointer;
+    }
+  }
+}
