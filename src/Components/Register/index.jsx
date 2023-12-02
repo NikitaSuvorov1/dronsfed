@@ -46,7 +46,8 @@ export const Register = () => {
     ];
 
     return (
-        <div className={styles.root}>
+        <div className='register'>
+            <div className={styles.form}>
             <p className={styles.formTitle}>Присоединяйся к нам!</p>
             <div className={styles.formContainer}>
                 <form  className={styles.form}>
@@ -62,8 +63,7 @@ export const Register = () => {
                     <button className={styles.submitButton}>Отправить</button>
                 </form>
             </div>
-
-
+            </div>
         </div>
     )
 }

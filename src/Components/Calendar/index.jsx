@@ -19,27 +19,29 @@ export const Calendar = () => {
     console.log(data)
 
     return (
-        <div className={styles.root}>
+        <div className='calendar'>
+            <div className={styles.root}>
             <span className={styles.calendarTitle}>Календарь
                 мероприятий</span>
-            <div className={styles.calendarForm}>
-                {data ? data.map((obj) => (
-                    <div className={styles.event}>
-                        <div className={styles.eventText}>
-                            <p className={styles.eventDate}>
-                                {obj.dateTime}
-                            </p>
-                            <p className={styles.eventName}>{obj.summary}</p>
+                <div className={styles.calendarForm}>
+                    {data ? data.map((obj) => (
+                        <div className={styles.event}>
+                            <div className={styles.eventText}>
+                                <p className={styles.eventDate}>
+                                    {obj.dateTime}
+                                </p>
+                                <p className={styles.eventName}>{obj.summary}</p>
+                            </div>
+                            <hr className={styles.hr}/>
                         </div>
-                        <hr className={styles.hr}/>
-                    </div>
-                )) : <p>Мероприятий нет</p>}
+                    )) : <p>Мероприятий нет</p>}
 
 
+                </div>
 
             </div>
-
         </div>
+
 
     )
 }

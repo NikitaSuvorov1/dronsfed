@@ -25,14 +25,17 @@ export const Info = () => {
     ]
 
     return (
-        <div className={styles.info}>
+        <div className='info'>
+            <div className={styles.info}>
             <span className={styles.titles}>
                     Готов ли ты окунуться в захватывающий мир скорости, адреналина и технологий?
                 </span>
-            {descriptions.map((obj) => (
-                <Card id={obj.id} title={obj.title} text={obj.text} imageURL={obj.imageURL} />
-            ))}
-            <p className={styles.infofooterText}>Присоединяйся к нам и открой для себя новую волнующую гоночную эпоху в республике Татарстан!</p>
+                {descriptions.map((obj) => (
+                    <Card id={obj.id} title={obj.title} text={obj.text} imageURL={obj.imageURL} />
+                ))}
+                <p className={styles.infofooterText}>Присоединяйся к нам и открой для себя новую волнующую гоночную эпоху в республике Татарстан!</p>
+            </div>
         </div>
+
     )
 }

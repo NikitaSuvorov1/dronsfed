@@ -1,22 +1,19 @@
 .root {
   text-align: center;
+  margin: 0 auto;
 }
 .root .container_header {
-  margin: 0 auto;
   background-color: #110F5E;
 }
 .root .container {
-  margin: 0 auto;
   background: linear-gradient(#19168C, 95%, #650049);
   padding: 20px 100px;
 }
 .root .container2 {
-  margin: 0 auto;
   background: #650049;
   padding: 20px 100px;
 }
 .root .container3 {
-  margin: 0 auto;
   background: linear-gradient(#650049, 3%, #19168C);
   padding: 20px 100px;
 }
