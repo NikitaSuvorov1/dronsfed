@@ -32,12 +32,13 @@
     background: linear-gradient(263deg, rgba(255, 248, 0, 1) 13.57%, rgba(0, 255, 209, 1) 83%);
     color: black;
     cursor: pointer;
-    transition: box-shadow, opacity 0.4s;
+    box-shadow: yellowgreen;
+    transition: all 0.5s ease-in-out;
     opacity: 0.8;
   }
 
   .register:hover {
-    box-shadow: 2px 2px 2px 2px yellowgreen;
+    box-shadow: 5px 2px 5px 1px yellowgreen;
     opacity: 1;
   }
 

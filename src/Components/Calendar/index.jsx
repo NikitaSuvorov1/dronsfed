@@ -6,15 +6,15 @@ export const Calendar = () => {
 
     const [data, setData] = useState([])
 
-    // const fetchData = async () => {
-    //     await axios.get('https://kevin12312312.pythonanywhere.com/events/').then(res => {
-    //         setData(res.data)
-    //     })
-    // }
-    //
-    // useEffect(() => {
-    //     fetchData()
-    // }, [])
+    const fetchData = async () => {
+        await axios.get('https://kevin12312312.pythonanywhere.com/events/').then(res => {
+            setData(res.data)
+        })
+    }
+
+    useEffect(() => {
+        fetchData()
+    }, [])
 
     console.log(data)
 

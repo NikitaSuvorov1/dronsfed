@@ -136,11 +136,11 @@
      margin: 30px auto;
      align-items: center;
      margin-bottom: 50px;
-     transition: opacity 0.4s;
+     transition: all 0.4s ease-in-out;
    }
 
    .submitButton:hover {
-     box-shadow: 2px 2px 2px 2px yellowgreen;
+     box-shadow: 5px 2px 5px 1px yellowgreen;
      opacity: 1;
      cursor: pointer;
    }
