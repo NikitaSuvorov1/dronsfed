@@ -1,18 +1,29 @@
 .root {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   padding: 10px 0;
   position: fixed;
   width: 100%;
   background-color: #110F5E;
   z-index: 1;
-  margin-top: 30px;
+}
+.root .menu {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.root .burgerTabs {
+  display: none;
 }
 .root .tabs {
   display: flex;
+  width: 40%;
+  justify-content: space-around;
 }
 .root .burgerImg {
+  display: none;
+}
+.root .burgerMenu {
   display: none;
 }
 .root .register {
@@ -41,7 +52,6 @@
   opacity: 1;
 }
 .root .tags {
-  margin-right: 50px;
   color: white;
   font-size: 20px;
   cursor: pointer;
@@ -59,26 +69,62 @@
   color: white;
   background: linear-gradient(263deg, rgb(255, 248, 0) 13.57%, rgb(0, 255, 209) 83%);
 }
+
 @media screen and (max-width: 450px) {
-  .root .root {
-    display: flex;
-    margin-top: -10px;
+  .root {
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    background-color: #110F5E;
+    z-index: 1;
+    margin: 0 auto;
   }
-  .root .root .tabs {
+  .root .menu {
     display: none;
   }
-  .root .root .logo {
-    width: 47px;
-    height: 44px;
+  .root .burgerMenuHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
   }
-  .root .root .burgerImg {
-    display: block;
+  .root .burgerImg {
     width: 50px;
     height: 50px;
-    cursor: pointer;
+    display: block;
   }
-  .root .root .register {
-    display: none;
+  .root .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .root .burgerMenu {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .root .burgerTabs {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+  }
+  .root .tags {
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s;
+    color: #FFF;
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .root .tags:hover {
+    color: #00ffc2;
   }
 }
 

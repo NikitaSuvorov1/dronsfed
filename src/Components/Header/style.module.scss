@@ -1,20 +1,36 @@
 
 .root {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   padding: 10px 0;
   position: fixed;
   width: 100%;
   background-color: #110F5E;
   z-index: 1;
-  margin-top: 30px;
+
+
+  .menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+
+  .burgerTabs {
+    display: none;
+  }
 
   .tabs {
     display: flex;
+    width: 40%;
+    justify-content: space-around;
   }
 
   .burgerImg {
+    display: none;
+  }
+
+  .burgerMenu {
     display: none;
   }
 
@@ -48,7 +64,6 @@
 
 
   .tags {
-    margin-right: 50px;
     color: white;
     font-size: 20px;
     cursor: pointer;
@@ -69,30 +84,70 @@
     color: white;
     background: linear-gradient(263deg, rgba(255, 248, 0, 1) 13.57%, rgba(0, 255, 209, 1) 83%);
   }
-  
-  @media screen and (max-width: 450px){
+}
+
+
+  @media screen and (max-width: 450px) {
     .root {
-      display: flex;
-      margin-top: -10px;
-      .tabs {
+      align-items: center;
+      justify-content: space-around;
+      position: fixed;
+      width: 100%;
+      background-color: #110F5E;
+      z-index: 1;
+      margin: 0 auto;
+
+      .menu {
         display: none;
       }
 
-      .logo {
-        width: 47px;
-        height: 44px;
+      .burgerMenuHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
       }
 
       .burgerImg {
-        display: block;
         width: 50px;
         height: 50px;
-        cursor: pointer;
+        display: block;
       }
 
-      .register {
-        display: none;
+      .logo {
+        width: 50px;
+        height: 50px;
+      }
+      .burgerMenu {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+      }
+
+      .burgerTabs {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+      }
+
+      .tags {
+        font-size: 15px;
+        color: white;
+        cursor: pointer;
+        transition: color 0.2s;
+        color: #FFF;
+        font-family: Russo One;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .tags:hover {
+        color: #00ffc2;
       }
     }
   }
-}

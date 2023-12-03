@@ -12,6 +12,9 @@
   width: 50%;
   align-content: center;
 }
+.general .register {
+  display: none;
+}
 .general .maintitle {
   color: #FFF;
   font-family: Orbitron;
@@ -48,6 +51,7 @@
     align-items: center;
     text-align: center;
     display: block;
+    margin-top: 150px;
   }
   .general img {
     display: none;
@@ -75,6 +79,8 @@
   .general .register {
     border-radius: 30px;
     outline: none;
+    display: block;
+    margin: 0 auto;
     border: 0;
     font-weight: 400;
     height: 60px;
