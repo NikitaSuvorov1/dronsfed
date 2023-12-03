@@ -3,16 +3,18 @@
   width: 100%;
   background: #110F5E;
   margin-top: 100px;
-  display: flex;
   padding: 20px 0;
 
+  .footerMain {
+    display: flex;
+    justify-content: space-evenly;
+  }
 
   .footerText {
     text-align: left;
     align-items: flex-start;
     padding: 50px;
     color: #FFF;
-
     font-family: Russo One, serif;
     font-size: 26px;
     font-style: normal;
@@ -30,23 +32,24 @@
   .socialwebs {
     display: flex;
     padding: 0 50px;
-  }
+
 
     img {
       margin-right: 20px;
       cursor: pointer;
     }
 
-
+  }
 
   .secondlogo {
-    padding: 50px;
+    padding: 50px 40px;
   }
 
 
   .footerRight {
-    padding: 20px 30px;
+    padding: 65px 0;
     text-align: left;
+    width: 20%;
   }
 
   .footerName {
@@ -103,14 +106,14 @@
   .footerSponsors {
     border-radius: 41px;
     background: #D9D9D9;
-    max-width: 500px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    padding: 50px;
     align-items: center;
+    width: 80%;
+    margin: 0 auto;
     justify-items: center;
-    padding: 10px;
-
+    display: flex;
+    justify-content: space-between;
+    //display: none;
 
     img {
       cursor: pointer;
@@ -127,17 +130,64 @@
 }
 
 
-@media screen and (max-width: 450px) {
+//@media screen and (max-width: 1000px) {
+//  .footer {
+//
+//    display: flex;
+//    flex-direction: column;
+//    margin: 100px auto;
+//    margin-bottom: 0;
+//
+//    .footerLeft {
+//      width: 50%;
+//    }
+//
+//    .footerSponsors {
+//      padding: 50px;
+//      display: flex;
+//      margin: 0 auto;
+//      flex-direction: column;
+//
+//      img {
+//        padding: 10px;
+//        width: 100%
+//      }
+//    }
+//
+//    .footerMain {
+//      display: flex;
+//      justify-content: space-around;
+//    }
+//
+//
+//    .footerRef {
+//      color: #FFF;
+//      padding: 0;
+//      display: block;
+//      text-align: center;
+//      font-family: Russo One;
+//      font-size: 20px;
+//      font-style: normal;
+//      font-weight: 400;
+//      line-height: 145%; /* 17.4px */
+//    }
+//  }
+//
+//}
+
+
+@media screen and (max-width: 500px) {
   .footer {
-    display: block;
     flex-direction: column;
     padding: 0;
+    display: flex;
     margin: 150px auto;
     margin-bottom: -10px;
     border-radius: 0;
 
-    .footerRight {
-      display: block;
+    .footerMain {
+      display: flex;
+      flex-direction: column;
     }
 
     .footerText {
@@ -155,19 +205,18 @@
       display: block;
       margin: 0 auto;
       margin-bottom: 0;
+      width: 100%;
     }
 
     .footerName {
       text-align: center;
     }
 
-    img {
-      margin-right: 0;
-    }
 
     .footerSectionName {
       text-align: center;
       margin: 20px auto;
+      width: 80%;
     }
 
     .footerLogo {
@@ -202,15 +251,21 @@
       padding: 0;
       width: 100%;
       justify-content: space-evenly;
+
+      img {
+        margin: 0;
+      }
     }
 
     .footerSponsors {
       padding: 20px;
+      display: flex;
+      margin: 0 auto;
+      flex-direction: column;
       img {
         padding: 10px;
-        width: 130px;
-        height: 90px;
       }
     }
   }
 }
+

@@ -3,8 +3,11 @@
   width: 100%;
   background: #110F5E;
   margin-top: 100px;
-  display: flex;
   padding: 20px 0;
+}
+.footer .footerMain {
+  display: flex;
+  justify-content: space-evenly;
 }
 .footer .footerText {
   text-align: left;
@@ -27,16 +30,17 @@
   display: flex;
   padding: 0 50px;
 }
-.footer img {
+.footer .socialwebs img {
   margin-right: 20px;
   cursor: pointer;
 }
 .footer .secondlogo {
-  padding: 50px;
+  padding: 50px 40px;
 }
 .footer .footerRight {
-  padding: 20px 30px;
+  padding: 65px 0;
   text-align: left;
+  width: 20%;
 }
 .footer .footerName {
   color: #626262;
@@ -85,13 +89,13 @@
 .footer .footerSponsors {
   border-radius: 41px;
   background: #D9D9D9;
-  max-width: 500px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  padding: 50px;
   align-items: center;
+  width: 80%;
+  margin: 0 auto;
   justify-items: center;
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 .footer .footerSponsors img {
   cursor: pointer;
@@ -103,17 +107,18 @@
   display: none;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .footer {
-    display: block;
     flex-direction: column;
     padding: 0;
+    display: flex;
     margin: 150px auto;
     margin-bottom: -10px;
     border-radius: 0;
   }
-  .footer .footerRight {
-    display: block;
+  .footer .footerMain {
+    display: flex;
+    flex-direction: column;
   }
   .footer .footerText {
     color: #FFF;
@@ -129,16 +134,15 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 0;
+    width: 100%;
   }
   .footer .footerName {
     text-align: center;
   }
-  .footer img {
-    margin-right: 0;
-  }
   .footer .footerSectionName {
     text-align: center;
     margin: 20px auto;
+    width: 80%;
   }
   .footer .footerLogo {
     width: 67px;
@@ -169,13 +173,17 @@
     width: 100%;
     justify-content: space-evenly;
   }
+  .footer .socialwebs img {
+    margin: 0;
+  }
   .footer .footerSponsors {
     padding: 20px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
   }
   .footer .footerSponsors img {
     padding: 10px;
-    width: 130px;
-    height: 90px;
   }
 }
 

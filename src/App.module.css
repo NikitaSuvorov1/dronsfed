@@ -18,7 +18,7 @@
   padding: 20px 100px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .root {
     text-align: center;
     margin: 0 auto;

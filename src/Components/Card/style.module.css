@@ -57,7 +57,7 @@
   line-height: 145%; /* 37.7px */
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .card {
     display: block;
     margin-top: 100px;
