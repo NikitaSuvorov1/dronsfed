@@ -136,6 +136,7 @@
     .formContainer {
       border-radius: 0;
       background: #110F5E;
+      padding: 40px 0;
     }
 
     .formTitle {
@@ -181,6 +182,10 @@
       margin: 30px auto;
       outline: none;
       border: none;
+    }
+
+    .formText {
+      display: none;
     }
 
     .textInput {

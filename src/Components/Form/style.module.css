@@ -120,6 +120,7 @@
   .root .formContainer {
     border-radius: 0;
     background: #110F5E;
+    padding: 40px 0;
   }
   .root .formTitle {
     color: #FFF;
@@ -160,6 +161,9 @@
     margin: 30px auto;
     outline: none;
     border: none;
+  }
+  .root .formText {
+    display: none;
   }
   .root .textInput {
     border-radius: 15px;
