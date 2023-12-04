@@ -25,10 +25,9 @@
   }
   .root .container_header {
     background-color: #110F5E;
-    margin: 0 auto;
   }
   .root .container {
-    background: linear-gradient(#19168C, 95%, #650049);
+    background: linear-gradient(#19168C, 98.5%, #650049);
     padding: 10px 0;
   }
   .root .container2 {
@@ -36,7 +35,7 @@
     padding: 10px 0;
   }
   .root .container3 {
-    background: linear-gradient(#650049, 3%, #19168C);
+    background: linear-gradient(#650049, 4%, #19168C);
     padding: 10px 0;
   }
 }

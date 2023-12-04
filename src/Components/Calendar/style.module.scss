@@ -62,19 +62,23 @@
     background-color: #650049;
     margin: 0 auto;
 
+
     .calendarTitle {
+      display: block;
       color: #FFF;
       text-align: center;
+      margin: 0 auto;
       font-family: Russo One;
-      font-size: 30px;
+      font-size: 25px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      width: 50%;
     }
 
     .calendarForm {
       background: linear-gradient(180deg, #1A198A 0%, #000 100%);
-      margin-top: 100px;
+      margin-top: 30px;
       border-radius: 0;
     }
 

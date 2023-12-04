@@ -22,10 +22,13 @@ function App() {
             <div className={styles.container_header}>
                 <Header/>
             </div>
-            <div className={styles.container}>
-                <General />
-                <Info/>
+            <div className='general'>
+                <div className={styles.container}>
+                    <General />
+                    <Info/>
+                </div>
             </div>
+
             <div className={styles.container2}>
                 <Calendar/>
                 <Course/>

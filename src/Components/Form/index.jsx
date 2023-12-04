@@ -64,7 +64,7 @@ export const Form = () => {
                     <p className={styles.questions}>Остались вопросы?</p>
                     <input className={styles.nameInput} {...register("firstName")} type={"text"} placeholder={"Имя"}/>
                     <input className={styles.emailInput} type={"text"} {...register("email")} placeholder={"E-mail"}/>
-                    <input className={styles.textInput} type={"text"} {...register("message")} placeholder={"Ваше сообщение"}/>
+                    <textarea className={styles.textInput} type={"text"} {...register("message")}  placeholder={"Ваше сообщение"}/>
                     <button className={styles.submitButton}>Отправить</button>
                 </form>
             </div>

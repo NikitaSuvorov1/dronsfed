@@ -1,4 +1,5 @@
 import styles from './style.module.scss'
+import {Link} from "react-scroll";
 
 export const General = () => {
     return (
@@ -9,7 +10,7 @@ export const General = () => {
                 <p className={styles.generalText}>Взлетай выше, летай быстрее, вместе с Федерацией гонок дронов Республики
                     Татарстан!</p>
             </div>
-            <button className={styles.register}>Присоединиться</button>
+            <Link to={'register'} offset={-20} smooth={true}><button className={styles.register}>Присоединиться</button></Link>
             <img src='assets/BOY.png'/>
         </div>
     )

@@ -113,4 +113,73 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 500px) {
+  .root {
+    margin: 115px auto;
+  }
+  .root .formContainer {
+    border-radius: 0;
+    background: #110F5E;
+  }
+  .root .formTitle {
+    color: #FFF;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .root .nameInput {
+    background: #D9D9D9;
+    width: 85%;
+    color: #898989;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 10px;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+  }
+  .root .emailInput {
+    border-radius: 15px;
+    background: #D9D9D9;
+    width: 90%;
+    color: #898989;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 0;
+    margin: 30px auto;
+    outline: none;
+    border: none;
+  }
+  .root .textInput {
+    border-radius: 15px;
+    background: #D9D9D9;
+    width: 90%;
+    color: #898989;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 auto;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    min-height: 200px;
+    justify-items: start;
+    margin-bottom: 50px;
+  }
+}
+
 /*# sourceMappingURL=style.module.css.map */

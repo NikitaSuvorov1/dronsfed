@@ -145,25 +145,28 @@
      cursor: pointer;
    }
  }
+
+
+
    
    @media screen and (max-width: 500px) {
      .form {
        margin: 0 auto;
 
        .formContainer {
-         border-radius: 84px;
+         border-radius: 30px;
          background: #110F5E;
        }
 
        .formTitle {
          color: #FFF;
+
          text-align: center;
          font-family: Russo One;
-         font-size: 24px;
+         font-size: 30px;
          font-style: normal;
          font-weight: 400;
          line-height: normal;
-         padding: 5px;
        }
 
        .formText {
@@ -189,15 +192,14 @@
 
        .RegisterSubtitle {
          color: #FFF;
+         width: 80%;
+         margin: 30px auto;
          text-align: center;
          font-family: Russo One;
-         font-size: 30px;
+         font-size: 24px;
          font-style: normal;
          font-weight: 400;
          line-height: normal;
-         width: 60%;
-         margin: 50px auto;
-         text-align: center;
        }
 
        .nameInput {
