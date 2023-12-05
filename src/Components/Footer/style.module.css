@@ -61,7 +61,6 @@
 }
 .footer .footerSectionName {
   transition: background-color 0.5s;
-  width: 35%;
   font-size: 20px;
   transition: background-color 1s;
   font-family: Russo One;
