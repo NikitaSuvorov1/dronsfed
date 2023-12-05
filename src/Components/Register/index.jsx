@@ -49,7 +49,10 @@ export const Register = () => {
         <div className='register'>
             <div className={styles.form}>
             <p className={styles.formTitle}>Присоединяйся к нам!</p>
+                <img className={styles.ellipse1} src='/assets/Ellipse%209.png' />
+                <img className={styles.ellipse2} src='/assets/Ellipse%2010.png' />
             <div className={styles.formContainer}>
+
                 <form  className={styles.form}>
                     <p className={styles.RegisterSubtitle}>Вступить в Федерацию гонок дронов
                         Республики Татарстан</p>

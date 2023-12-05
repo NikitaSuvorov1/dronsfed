@@ -9,6 +9,10 @@
   width: 40%;
   text-align: left;
 }
+.alternativeCard .cardImg {
+  position: relative;
+  z-index: 5;
+}
 .alternativeCard .title {
   color: #FAFF00;
   font-family: Russo One;
@@ -33,6 +37,8 @@
   justify-content: space-around;
   margin-top: 140px;
   align-items: center;
+  z-index: 12;
+  position: relative;
 }
 .card .cardLeft {
   width: 40%;
@@ -47,6 +53,10 @@
   line-height: 145%; /* 52.2px */
   text-transform: uppercase;
   margin-bottom: 0;
+}
+.card .cardImg {
+  position: relative;
+  z-index: 5;
 }
 .card .text {
   color: #FFF;
@@ -119,6 +129,7 @@
   }
   .alternativeCard .cardImg {
     width: 260px;
+    z-index: 10;
     height: 150px;
   }
 }

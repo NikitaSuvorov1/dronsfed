@@ -4,6 +4,9 @@ export const Course = () => {
     return (
         <div className='course'>
             <div className={styles.course}>
+                <img className={styles.ellipse1} src='/assets/Ellipse%2051.png' />
+                <img className={styles.ellipse2} src='/assets/Ellipse%206.png' />
+                <img className={styles.ellipse3} src='/assets/Ellipse%207.png' />
                 <p className={styles.courseTitle}>Обучающий курс</p>
                 <div className={styles.courseInfo}>
                     <div className={styles.courseText}>

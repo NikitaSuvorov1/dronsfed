@@ -1,18 +1,52 @@
 
 .info {
-  margin-top: 140px;
+  margin-top: 240px;
   padding: 20px;
-
+  position: relative;
 
 .titles {
   color: #FFF;
   text-align: center;
+  display: block;
   font-family: Russo One;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  width: 70%;
+  margin: 0 auto;
 }
+
+  .dron1 {
+    position: absolute;
+    left: -100px;
+    top: -80px;
+  }
+
+  .dron2 {
+    position: absolute;
+    right: -100px;
+    top: 500px;
+  }
+
+  .dron3 {
+    position: absolute;
+    left: -100px;
+    margin-top: 980px;
+  }
+
+
+  .ellipse1 {
+    position: absolute;
+    right: -100px;
+    top: -60px;
+  }
+
+  .ellipse2 {
+    position: absolute;
+    left: -100px;
+  }
+
 
 .infofooterText {
   color: #FFF;
@@ -39,6 +73,38 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+    }
+
+
+    .dron1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100px;
+    }
+
+    .dron2 {
+      position: absolute;
+      right: 0;
+      top: 500px;
+      width: 100px;
+    }
+
+    .dron3 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100px;
+    }
+
+
+
+    .ellipse1 {
+      display: none;
+    }
+
+    .ellipse2 {
+      display: none;
     }
 
     .infofooterText {

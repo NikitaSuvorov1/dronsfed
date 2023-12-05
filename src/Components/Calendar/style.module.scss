@@ -2,7 +2,7 @@
 .root {
     background-color: #650049;
     margin-top: 100px;
-
+  position: relative;
   .calendarTitle {
     color: #FFF;
     text-align: center;
@@ -14,12 +14,26 @@
     margin-top: 20px;
   }
 
+  .ellipse1 {
+    position: absolute;
+    left: -100px;
+    top: -200px;
+  }
+
+  .ellipse2 {
+    position: absolute;
+    right: -100px;
+    height: 500px;
+    width: 400px;
+    margin-top: 400px;
+  }
+
   .calendarForm {
     background: linear-gradient(180deg, #1A198A 0%, #000 100%);
     min-height: 500px;
     border-radius: 84px;
     margin-top: 100px;
-
+    position: relative;
   }
 
 
@@ -74,6 +88,17 @@
       font-weight: 400;
       line-height: normal;
       width: 50%;
+    }
+
+    .ellipse1 {
+      position: absolute;
+      left: 0;
+      display: none;
+    }
+
+    .ellipse2 {
+      display: none;
+      position: absolute;
     }
 
     .calendarForm {

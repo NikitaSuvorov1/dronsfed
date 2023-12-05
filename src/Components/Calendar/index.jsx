@@ -22,6 +22,8 @@ export const Calendar = () => {
             <div className={styles.root}>
             <span className={styles.calendarTitle}>Календарь
                 мероприятий</span>
+                <img className={styles.ellipse1} src='/assets/Ellipse%208.png' />
+                <img className={styles.ellipse2} src='/assets/Ellipse%209.png' />
                 <div className={styles.calendarForm}>
                     {data ? data.map((obj) => (
                         <div key={obj.title} className={styles.event}>

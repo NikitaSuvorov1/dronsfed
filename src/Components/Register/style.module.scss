@@ -1,292 +1,315 @@
 
+.form {
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+
+  .formContainer {
+    border-radius: 84px;
+    background: #110F5E;
+    z-index: 10;
+  }
 
 
+  .ellipse1 {
+    position: absolute;
+    right: 0;
+  }
+
+  .ellipse2 {
+    position: absolute;
+    left: -50%;
+    margin-top: 400px;
+  }
+
+  .formTitle {
+    color: #FFF;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .formText {
+    color: #FFF;
+    padding-top: 50px;
+    text-align: center;
+    font-family: Russo One, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .questions {
+    color: #FFF;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .RegisterSubtitle {
+    color: #FFF;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  .nameInput {
+    border-radius: 15px;
+    background: #D9D9D9;
+    width: 70%;
+    color: #898989;
+
+    text-align: center;
+    font-family: Russo One;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    padding: 10px 10px;
+    margin: 10px auto;
+    outline: none;
+    border: none;
+
+  }
+
+  .emailInput {
+    border-radius: 15px;
+    background: #D9D9D9;
+    width: 70%;
+    color: #898989;
+
+    text-align: center;
+    font-family: Russo One;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    padding: 10px 10px;
+    margin: 30px auto;
+    outline: none;
+    border: none;
+  }
+
+  .textInput {
+    border-radius: 15px;
+    background: #D9D9D9;
+    width: 70%;
+    color: #898989;
+
+    text-align: center;
+    font-family: Russo One;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    padding: 10px 10px;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    min-height: 100px;
+    justify-items: start;
+    margin-bottom: 50px;
+  }
+
+  .submitButton {
+    border-radius: 36px;
+    background: var(--cyberpunk-gradient, linear-gradient(263deg, #FF0 13.57%, #00FFD1 83.02%));
+    width: 273.121px;
+    height: 60px;
+    color: #000;
+    border: 0;
+    opacity: 0.8;
+    font-family: Russo One;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    outline: none;
+    margin: 30px auto;
+    align-items: center;
+    margin-bottom: 50px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .submitButton:hover {
+    box-shadow: 5px 2px 5px 1px yellowgreen;
+    opacity: 1;
+    cursor: pointer;
+  }
+}
 
 
-   .form {
-     display: flex;
-     flex-direction: column;
+@media screen and (max-width: 500px) {
+  .form {
+    margin: 0 auto;
 
-     .formContainer {
-       border-radius: 84px;
-       background: #110F5E;
-     }
+    .formContainer {
+      border-radius: 30px;
+      background: #110F5E;
+    }
 
-   .formTitle {
-     color: #FFF;
-     margin-top: 100px;
-     margin-bottom: 80px;
-     text-align: center;
-     font-family: Russo One;
-     font-size: 46px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: normal;
-   }
+    .ellipse2 {
+      right: 0;
+      position: absolute;
+      margin-top: 1200px;
+      height: 200px;
+      display: block;
+      width: 100px;
+    }
 
-   .formText {
-     color: #FFF;
-     padding-top: 50px;
-     text-align: center;
-     font-family: Russo One, sans-serif;
-     font-size: 30px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: normal;
-   }
+    .ellipse1 {
+      right: 0;
+      margin-top: 900px;
+      width: 200px;
+    }
 
-   .questions {
-     color: #FFF;
-     text-align: center;
-     font-family: Russo One;
-     font-size: 30px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: normal;
-   }
+    .formTitle {
+      color: #FFF;
 
-   .RegisterSubtitle {
-     color: #FFF;
-     text-align: center;
-     font-family: Russo One;
-     font-size: 30px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: normal;
-     width: 60%;
-     margin: 50px auto;
-     text-align: center;
-   }
+      text-align: center;
+      font-family: Russo One;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
 
-   .nameInput {
-     border-radius: 15px;
-     background: #D9D9D9;
-     width: 70%;
-     color: #898989;
+    .formText {
+      color: #FFF;
+      padding-top: 50px;
+      text-align: center;
+      font-family: Russo One, sans-serif;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
 
-     text-align: center;
-     font-family: Russo One;
-     font-size: 24px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: normal;
-     text-align: left;
-     padding: 10px 10px;
-     margin: 10px auto;
-     outline: none;
-     border: none;
+    .questions {
+      color: #FFF;
+      text-align: center;
+      font-family: Russo One;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
 
-   }
+    .RegisterSubtitle {
+      color: #FFF;
+      width: 80%;
+      margin: 30px auto;
+      text-align: center;
+      font-family: Russo One;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
 
-   .emailInput {
-     border-radius: 15px;
-     background: #D9D9D9;
-     width: 70%;
-     color: #898989;
+    .nameInput {
+      border-radius: 15px;
+      background: #D9D9D9;
+      width: 70%;
+      color: #898989;
 
-     text-align: center;
-     font-family: Russo One;
-     font-size: 24px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: normal;
-     text-align: left;
-     padding: 10px 10px;
-     margin: 30px auto;
-     outline: none;
-     border: none;
-   }
+      text-align: center;
+      font-family: Russo One;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: left;
+      padding: 10px 10px;
+      margin: 10px auto;
+      outline: none;
+      border: none;
 
-   .textInput {
-     border-radius: 15px;
-     background: #D9D9D9;
-     width: 70%;
-     color: #898989;
+    }
 
-     text-align: center;
-     font-family: Russo One;
-     font-size: 24px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: normal;
-     text-align: left;
-     padding: 10px 10px;
-     margin: 0 auto;
-     outline: none;
-     border: none;
-     min-height: 100px;
-     justify-items: start;
-     margin-bottom: 50px;
-   }
+    .emailInput {
+      border-radius: 15px;
+      background: #D9D9D9;
+      width: 70%;
+      color: #898989;
 
-   .submitButton {
-     border-radius: 36px;
-     background: var(--cyberpunk-gradient, linear-gradient(263deg, #FF0 13.57%, #00FFD1 83.02%));
-     width: 273.121px;
-     height: 60px;
-     color: #000;
-     border: 0;
-     opacity: 0.8;
-     font-family: Russo One;
-     font-size: 24px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: normal;
-     outline: none;
-     margin: 30px auto;
-     align-items: center;
-     margin-bottom: 50px;
-     transition: all 0.4s ease-in-out;
-   }
+      text-align: center;
+      font-family: Russo One;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: left;
+      padding: 10px 10px;
+      margin: 30px auto;
+      outline: none;
+      border: none;
+    }
 
-   .submitButton:hover {
-     box-shadow: 5px 2px 5px 1px yellowgreen;
-     opacity: 1;
-     cursor: pointer;
-   }
- }
+    .textInput {
+      border-radius: 15px;
+      background: #D9D9D9;
+      width: 70%;
+      color: #898989;
 
+      text-align: center;
+      font-family: Russo One;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: left;
+      padding: 10px 10px;
+      margin: 0 auto;
+      outline: none;
+      border: none;
+      min-height: 100px;
+      justify-items: start;
+      margin-bottom: 50px;
+    }
 
+    .submitButton {
+      border-radius: 36px;
+      background: var(--cyberpunk-gradient, linear-gradient(263deg, #FF0 13.57%, #00FFD1 83.02%));
+      width: 273.121px;
+      height: 60px;
+      color: #000;
+      border: 0;
+      opacity: 0.8;
+      font-family: Russo One;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      outline: none;
+      margin: 30px auto;
+      align-items: center;
+      margin-bottom: 50px;
+      transition: all 0.4s ease-in-out;
+    }
 
-   
-   @media screen and (max-width: 500px) {
-     .form {
-       margin: 0 auto;
-
-       .formContainer {
-         border-radius: 30px;
-         background: #110F5E;
-       }
-
-       .formTitle {
-         color: #FFF;
-
-         text-align: center;
-         font-family: Russo One;
-         font-size: 30px;
-         font-style: normal;
-         font-weight: 400;
-         line-height: normal;
-       }
-
-       .formText {
-         color: #FFF;
-         padding-top: 50px;
-         text-align: center;
-         font-family: Russo One, sans-serif;
-         font-size: 30px;
-         font-style: normal;
-         font-weight: 400;
-         line-height: normal;
-       }
-
-       .questions {
-         color: #FFF;
-         text-align: center;
-         font-family: Russo One;
-         font-size: 30px;
-         font-style: normal;
-         font-weight: 400;
-         line-height: normal;
-       }
-
-       .RegisterSubtitle {
-         color: #FFF;
-         width: 80%;
-         margin: 30px auto;
-         text-align: center;
-         font-family: Russo One;
-         font-size: 24px;
-         font-style: normal;
-         font-weight: 400;
-         line-height: normal;
-       }
-
-       .nameInput {
-         border-radius: 15px;
-         background: #D9D9D9;
-         width: 70%;
-         color: #898989;
-
-         text-align: center;
-         font-family: Russo One;
-         font-size: 24px;
-         font-style: normal;
-         font-weight: 400;
-         line-height: normal;
-         text-align: left;
-         padding: 10px 10px;
-         margin: 10px auto;
-         outline: none;
-         border: none;
-
-       }
-
-       .emailInput {
-         border-radius: 15px;
-         background: #D9D9D9;
-         width: 70%;
-         color: #898989;
-
-         text-align: center;
-         font-family: Russo One;
-         font-size: 24px;
-         font-style: normal;
-         font-weight: 400;
-         line-height: normal;
-         text-align: left;
-         padding: 10px 10px;
-         margin: 30px auto;
-         outline: none;
-         border: none;
-       }
-
-       .textInput {
-         border-radius: 15px;
-         background: #D9D9D9;
-         width: 70%;
-         color: #898989;
-
-         text-align: center;
-         font-family: Russo One;
-         font-size: 24px;
-         font-style: normal;
-         font-weight: 400;
-         line-height: normal;
-         text-align: left;
-         padding: 10px 10px;
-         margin: 0 auto;
-         outline: none;
-         border: none;
-         min-height: 100px;
-         justify-items: start;
-         margin-bottom: 50px;
-       }
-
-       .submitButton {
-         border-radius: 36px;
-         background: var(--cyberpunk-gradient, linear-gradient(263deg, #FF0 13.57%, #00FFD1 83.02%));
-         width: 273.121px;
-         height: 60px;
-         color: #000;
-         border: 0;
-         opacity: 0.8;
-         font-family: Russo One;
-         font-size: 24px;
-         font-style: normal;
-         font-weight: 400;
-         line-height: normal;
-         outline: none;
-         margin: 30px auto;
-         align-items: center;
-         margin-bottom: 50px;
-         transition: all 0.4s ease-in-out;
-       }
-
-       .submitButton:hover {
-         box-shadow: 5px 2px 5px 1px yellowgreen;
-         opacity: 1;
-         cursor: pointer;
-       }
-     }
-   }
+    .submitButton:hover {
+      box-shadow: 5px 2px 5px 1px yellowgreen;
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}

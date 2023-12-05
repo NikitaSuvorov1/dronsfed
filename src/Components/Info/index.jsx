@@ -30,6 +30,11 @@ export const Info = () => {
             <span className={styles.titles}>
                     Готов ли ты окунуться в захватывающий мир скорости, адреналина и технологий?
                 </span>
+                <img className={styles.dron1} src='/assets/drone-clipart-non-copyright-7%204.png' />
+                <img className={styles.ellipse1} width={500} height={400} src='/assets/Ellipse 4.png' />
+                <img className={styles.ellipse2} src='/assets/Ellipse 5.png' />
+                <img className={styles.dron2} src='/assets/drone-clipart-non-copyright-7%203.png' />
+                <img className={styles.dron3} src='/assets/drone-clipart-non-copyright-7%204.png' />
                 {descriptions.map((obj) => (
                     <Card id={obj.id} title={obj.title} text={obj.text} imageURL={obj.imageURL} />
                 ))}
