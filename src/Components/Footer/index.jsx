@@ -14,14 +14,14 @@ export const Footer = () => {
                     <div className={styles.footerLeft}>
                         <p className={styles.footerText}>Следите за гонками дронов в социальных сетях</p>
                         <div className={styles.socialwebs}>
-                            <img className={styles.footerLogo} src='assets/logo_2.png'/>
+                            <img className={styles.footerLogo} src='assets/mainLogo.png'/>
                             <a href='https://vk.com/club223653806'> <img src='assets/VK.png'/></a>
                             <a href='https://t.me/tatarstan_drons'><img src='assets/TELEGRAM.png'/></a>
                             <a href='https://www.youtube.com/channel/UCUXqBaImWzbHHFMTUsGWAEQ'><img
                                 src='assets/YOUTUBE.png'/></a>
                         </div>
                         <div className={styles.logoSlogan}>
-                            <img className={styles.secondlogo} src='assets/logo_2.png'/>
+                            <img width={100} height={110} className={styles.secondlogo} src='assets/mainLogo.png'/>
                             <p className={styles.footerSlogan}>© 2023-2024 DRONE RACING RT</p>
                         </div>
 

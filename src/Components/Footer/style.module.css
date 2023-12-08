@@ -35,7 +35,7 @@
   cursor: pointer;
 }
 .footer .secondlogo {
-  padding: 50px 40px;
+  padding: 10px 50px;
 }
 .footer .footerRight {
   padding: 65px 0;
@@ -71,7 +71,6 @@
 }
 .footer .footerSlogan {
   color: #FFF;
-  margin-left: -30px;
   font-family: Russo One;
   font-size: 20px;
   font-style: normal;
@@ -182,6 +181,17 @@
     flex-direction: column;
   }
   .footer .footerSponsors img {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .footerSponsors {
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .footerSponsors img {
     padding: 10px;
   }
 }

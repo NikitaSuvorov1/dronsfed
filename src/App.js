@@ -11,6 +11,9 @@ import {Form} from "./Components/Form";
 import {Footer} from "./Components/Footer";
 import {Register} from "./Components/Register";
 import {Element} from 'react-scroll'
+import ImageFollowCursor from "./followElement";
+import FollowCursor from "./followElement";
+import ScrollToTopButton from "./Components/ScrollToTopButton";
 
 
 function App() {
@@ -22,10 +25,13 @@ function App() {
             <div className={styles.container_header}>
                 <Header/>
             </div>
+            <ScrollToTopButton />
+            {/*<FollowCursor />*/}
             <div className='general'>
                 <div className={styles.container}>
                     <General />
                     <Info/>
+
                 </div>
             </div>
 

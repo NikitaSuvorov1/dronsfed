@@ -1,8 +1,12 @@
 
 .root {
+  z-index: 100;
+  position: relative;
+
   .formContainer {
     border-radius: 84px;
     background: #110F5E;
+
   }
 
   .form {

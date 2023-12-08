@@ -41,9 +41,9 @@
 .tab-content {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height 0.35s;
-  -o-transition: max-height 0.35s;
-  transition: max-height 0.35s;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
 .tab-content p {
@@ -125,9 +125,9 @@
   .tab-content {
     max-height: 0;
     overflow: hidden;
-    -webkit-transition: max-height 0.35s;
-    -o-transition: max-height 0.35s;
-    transition: max-height 0.35s;
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
   }
   .tab-content p {
     color: #000;
