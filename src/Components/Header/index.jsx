@@ -24,7 +24,7 @@ export const Header = () => {
     return (
         <div className={styles.root}>
             <div className={styles.menu}>
-                <Link to={'general'} smooth={true}><img  className={styles.logo} width={90} height={90} src='assets/mainLogo.png'/></Link>
+                <Link to={'general'} smooth={true}><img loading={"lazy"}  className={styles.logo} width={90} height={90} src='assets/mainLogo.png'/></Link>
                 <div className={styles.tabs}>
                     {tabs.map((tab) => (
                         <Link offset={-130} to={tab.name} smooth={true}><p key={tab.section}  className={styles.tags}>
@@ -37,7 +37,7 @@ export const Header = () => {
             </div>
             <div className={styles.burgerMenu}>
                 <div className={styles.burgerMenuHeader}><Link to={'general'} smooth={true}><img  className={styles.logo} width={90} height={90} src='assets/mainLogo.png'/></Link>
-                    <img onClick={openTabs} className={styles.burgerImg} src={tabsOpen ? 'assets/burgerClose.png' : 'assets/burger.png'}/></div>
+                    <img loading={"lazy"} onClick={openTabs} className={styles.burgerImg} src={tabsOpen ? 'assets/burgerClose.png' : 'assets/burger.png'}/></div>
                 {tabsOpen ? <div className={styles.burgerTabs}>
                     {tabs.map((tab) => (
                         <Link offset={-130} to={tab.name} smooth={true}><p onClick={openTabs} key={tab.section}  className={styles.tags}>

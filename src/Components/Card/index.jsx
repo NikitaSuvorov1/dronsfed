@@ -1,5 +1,4 @@
 import styles from './style.module.scss'
-
 export const Card = ({title,text,imageURL,id}) => {
 
     return (

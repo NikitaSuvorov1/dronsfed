@@ -15,13 +15,13 @@ export const Footer = () => {
                         <p className={styles.footerText}>Следите за гонками дронов в социальных сетях</p>
                         <div className={styles.socialwebs}>
                             <img className={styles.footerLogo} src='assets/mainLogo.png'/>
-                            <a href='https://vk.com/club223653806'> <img src='assets/VK.png'/></a>
-                            <a href='https://t.me/tatarstan_drons'><img src='assets/TELEGRAM.png'/></a>
-                            <a href='https://www.youtube.com/channel/UCUXqBaImWzbHHFMTUsGWAEQ'><img
+                            <a href='https://vk.com/club223653806'> <img loading={"lazy"} src='assets/VK.png'/></a>
+                            <a href='https://t.me/tatarstan_drons'><img loading={"lazy"} src='assets/TELEGRAM.png'/></a>
+                            <a href='https://www.youtube.com/channel/UCUXqBaImWzbHHFMTUsGWAEQ'><img loading={"lazy"}
                                 src='assets/YOUTUBE.png'/></a>
                         </div>
                         <div className={styles.logoSlogan}>
-                            <img width={100} height={110} className={styles.secondlogo} src='assets/mainLogo.png'/>
+                            <img loading={"lazy"} width={100} height={110} className={styles.secondlogo} src='assets/mainLogo.png'/>
                             <p className={styles.footerSlogan}>© 2023-2024 DRONE RACING RT</p>
                         </div>
 
@@ -38,11 +38,11 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className={styles.footerSponsors}>
-                    <a href='https://minsport.gov.ru/'><img src='assets/minsport 1.png'/></a>
-                    <a href='http://duma.gov.ru/news/duma/'> <img src='assets/scale_1200 1.png'/></a>
-                    <a href='https://moscow.sport/'><img src='assets/ms_logo_rgb_1_kras 1.png'/></a>
-                    <a href='https://trurez.ru/'><img src='assets/-.png'/></a>
-                    <a href='https://dronesportsglobal.ru/'><img src='assets/drone.png'/></a>
+                    <a href='https://minsport.gov.ru/'><img loading={"lazy"} src='assets/minsport 1.png'/></a>
+                    <a href='http://duma.gov.ru/news/duma/'> <img loading={"lazy"} src='assets/scale_1200 1.png'/></a>
+                    <a href='https://moscow.sport/'><img loading={"lazy"} src='assets/ms_logo_rgb_1_kras 1.png'/></a>
+                    <a href='https://trurez.ru/'><img loading={"lazy"} src='assets/-.png'/></a>
+                    <a href='https://dronesportsglobal.ru/'><img loading={"lazy"} src='assets/drone.png'/></a>
                 </div>
                 <p className={styles.footerRef}>© 2023-2024 DRFRT</p>
             </div>

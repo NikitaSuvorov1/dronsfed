@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './style.scss';
 import {Link} from "react-scroll";
-
 const ScrollToTopButton = () => {
     const [isVisible, setIsVisible] = useState(false);
 
@@ -30,7 +29,7 @@ const ScrollToTopButton = () => {
     return (
         <div>
             <Link smooth={true} to={'general'}>
-                <img src='/assets/toTopBtn.png' className={`scroll-to-top-button ${isVisible ? 'visible' : ''}`} >
+                <img loading={"lazy"} src='/assets/toTopBtn.png' className={`scroll-to-top-button ${isVisible ? 'visible' : ''}`} >
                     {/*<i className="fa fa-arrow-up"/>*/}
                 </img>
             </Link>

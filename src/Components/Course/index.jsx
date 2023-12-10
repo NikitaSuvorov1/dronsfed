@@ -4,9 +4,9 @@ export const Course = () => {
     return (
         <div className='course'>
             <div className={styles.course}>
-                <img className={styles.ellipse1} src='/assets/Ellipse%2051.png' />
-                <img className={styles.ellipse2} src='/assets/Ellipse%206.png' />
-                <img className={styles.ellipse3} src='/assets/Ellipse%207.png' />
+                <img loading={"lazy"} className={styles.ellipse1} src='/assets/Ellipse%2051.png' />
+                <img loading={"lazy"} className={styles.ellipse2} src='/assets/Ellipse%206.png' />
+                <img loading={"lazy"} className={styles.ellipse3} src='/assets/Ellipse%207.png' />
                 <p className={styles.courseTitle}>Обучающий курс</p>
                 <div className={styles.courseInfo}>
                     <div className={styles.courseText}>
@@ -19,7 +19,7 @@ export const Course = () => {
                         <p className={styles.text1}>Не упустите шанс предоставить вашему ребенку возможность стать
                             техническим гением!</p>
                     </div>
-                    <img src='assets/item 34.png'/>
+                    <img loading={"lazy"} src='assets/item 34.png'/>
                 </div>
                 <p className={styles.courseFooter}>Записаться можно на <a className={styles.href}
                                                                           href='https://tonkorag.ru/school'>tonkorag.ru/school</a>
