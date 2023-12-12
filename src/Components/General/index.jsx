@@ -6,7 +6,7 @@ export const General = () => {
         <div className={styles.general}>
             <div className={styles.leftcontent}>
                 <img loading={"lazy"} className={styles.ellipse1} src='assets/Ellipse 3.png' />
-                <p className={styles.maintitle}>DRONE RACING</p>
+                <p className={styles.maintitle}>ФЕДЕРАЦИЯ ГОНОК ДРОНОВ РЕСПУБЛИКИ ТАТАРСТАН</p>
                 <p className={styles.subtitle}>kazan 2024</p>
                 <p className={styles.generalText}>Взлетай выше, летай быстрее, вместе с Федерацией гонок дронов Республики
                     Татарстан!</p>

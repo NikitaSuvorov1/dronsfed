@@ -4,17 +4,31 @@ import axios from "axios";
 
 export const Calendar = () => {
 
-    const [data, setData] = useState([])
+    // const [data, setData] = useState([])
 
-    const fetchData = async () => {
-        await axios.get('https://kevin12312312.pythonanywhere.com/events/').then(res => {
-            setData(res.data)
-        })
-    }
+    // const fetchData = async () => {
+    //     await axios.get('https://kevin12312312.pythonanywhere.com/events/').then(res => {
+    //         setData(res.data)
+    //     })
+    // }
 
-    useEffect(() => {
-        fetchData()
-    }, [])
+    // useEffect(() => {
+    //     fetchData()
+    // }, [])
+
+    const data = [{
+        "dateTime":"20 декабря",
+        "summary": "Турнир дронов РТ"
+    },
+        {
+            "dateTime":"20 января",
+            "summary": "Турнир дронов РТ"
+        },
+        {
+            "dateTime":"20 февраля",
+            "summary": "Турнир дронов РТ"
+        },
+    ]
 
 
     return (
