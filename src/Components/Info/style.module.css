@@ -13,6 +13,8 @@
   font-weight: 400;
   line-height: normal;
   width: 70%;
+  z-index: 10;
+  position: relative;
   margin: 0 auto;
 }
 .info .dron1 {
@@ -31,13 +33,26 @@
   margin-top: 980px;
 }
 .info .ellipse1 {
-  position: absolute;
+  width: 400.219px;
+  height: 400.898px;
+  flex-shrink: 0;
   right: -100px;
-  top: -60px;
+  margin-top: -100px;
+  border-radius: 591.898px;
+  background: linear-gradient(45deg, rgba(173, 0, 255, 0.5) 15.69%, rgba(241, 0, 0, 0.72) 81.51%);
+  filter: blur(100px);
+  position: absolute;
 }
 .info .ellipse2 {
   position: absolute;
-  left: -100px;
+  left: -300px;
+  margin-top: 150px;
+  border-radius: 434.013px;
+  background: linear-gradient(247deg, rgba(173, 0, 255, 0.5) 15.69%, rgba(255, 0, 0, 0.6) 81.51%);
+  width: 434.013px;
+  height: 417.612px;
+  flex-shrink: 0;
+  filter: blur(100px);
 }
 .info .infofooterText {
   color: #FFF;
@@ -98,4 +113,4 @@
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.module.css.map */

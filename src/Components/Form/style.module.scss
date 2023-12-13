@@ -6,7 +6,10 @@
   .formContainer {
     border-radius: 84px;
     background: #110F5E;
-
+    margin: 0 auto;
+    width: 90%;
+    z-index: 10;
+    position: relative;
   }
 
   .form {
@@ -23,6 +26,32 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+
+  .ellipse1 {
+    position: absolute;
+    width: 430.043px;
+    height: 513.739px;
+    transform: rotate(171.925deg);
+    flex-shrink: 0;
+    left: -20%;
+    border-radius: 513.739px;
+    background: linear-gradient(247deg, rgba(219, 0, 255, 0.50) 15.69%, rgba(252, 0, 30, 0.32) 81.51%);
+    z-index: 0;
+    margin-top: 400px;
+    filter: blur(100px);
+  }
+
+  .ellipse2 {
+    width: 286.597px;
+    right: 0;
+    height: 290.078px;
+    transform: rotate(171.925deg);
+    flex-shrink: 0;
+    border-radius: 290.078px;
+    background: linear-gradient(247deg, rgba(219, 0, 255, 0.50) 15.69%, rgba(252, 0, 30, 0.32) 81.51%);
+    position: absolute;
+    filter: blur(100px);
   }
 
   .formText {
@@ -60,7 +89,7 @@
     font-weight: 400;
     line-height: normal;
     text-align: left;
-    padding: 10px 10px ;
+    padding: 10px 10px;
     margin: 0 auto;
     outline: none;
     border: none;
@@ -79,7 +108,7 @@
     font-weight: 400;
     line-height: normal;
     text-align: left;
-    padding: 10px 10px ;
+    padding: 10px 10px;
     margin: 30px auto;
     outline: none;
     border: none;
@@ -98,7 +127,7 @@
     font-weight: 400;
     line-height: normal;
     text-align: left;
-    padding: 10px 10px ;
+    padding: 10px 10px;
     margin: 0 auto;
     outline: none;
     border: none;
@@ -109,7 +138,8 @@
 
   .submitButton {
     border-radius: 36px;
-    background: var(--cyberpunk-gradient, linear-gradient(263deg, #FF0 13.57%, #00FFD1 83.02%));width: 273.121px;
+    background: var(--cyberpunk-gradient, linear-gradient(263deg, #FF0 13.57%, #00FFD1 83.02%));
+    width: 273.121px;
     height: 60px;
     color: #000;
     border: 0;
@@ -141,6 +171,7 @@
       border-radius: 0;
       background: #110F5E;
       padding: 40px 0;
+      width: 100%;
     }
 
     .formTitle {
@@ -164,7 +195,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-      padding: 10px 10px ;
+      padding: 10px 10px;
       margin: 0 auto;
       outline: none;
       border: none;
@@ -190,6 +221,12 @@
 
     .formText {
       display: none;
+    }
+
+    .ellipse2 {
+      width: 200px;
+      transform: rotate(0);
+      right: 0;
     }
 
     .textInput {

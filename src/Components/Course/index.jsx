@@ -4,9 +4,8 @@ export const Course = () => {
     return (
         <div className='course'>
             <div className={styles.course}>
-                <img loading={"lazy"} className={styles.ellipse1} src='/assets/Ellipse%2051.png' />
-                <img loading={"lazy"} className={styles.ellipse2} src='/assets/Ellipse%206.png' />
-                <img loading={"lazy"} className={styles.ellipse3} src='/assets/Ellipse%207.png' />
+                <div loading={"lazy"} className={styles.ellipse1} />
+                <div loading={"lazy"} className={styles.ellipse2}  />
                 <p className={styles.courseTitle}>Обучающий курс</p>
                 <div className={styles.courseInfo}>
                     <div className={styles.courseText}>

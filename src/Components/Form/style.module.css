@@ -5,6 +5,10 @@
 .root .formContainer {
   border-radius: 84px;
   background: #110F5E;
+  margin: 0 auto;
+  width: 90%;
+  z-index: 10;
+  position: relative;
 }
 .root .form {
   display: flex;
@@ -18,6 +22,30 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.root .ellipse1 {
+  position: absolute;
+  width: 430.043px;
+  height: 513.739px;
+  transform: rotate(171.925deg);
+  flex-shrink: 0;
+  left: -20%;
+  border-radius: 513.739px;
+  background: linear-gradient(247deg, rgba(219, 0, 255, 0.5) 15.69%, rgba(252, 0, 30, 0.32) 81.51%);
+  z-index: 0;
+  margin-top: 400px;
+  filter: blur(100px);
+}
+.root .ellipse2 {
+  width: 286.597px;
+  right: 0;
+  height: 290.078px;
+  transform: rotate(171.925deg);
+  flex-shrink: 0;
+  border-radius: 290.078px;
+  background: linear-gradient(247deg, rgba(219, 0, 255, 0.5) 15.69%, rgba(252, 0, 30, 0.32) 81.51%);
+  position: absolute;
+  filter: blur(100px);
 }
 .root .formText {
   color: #FFF;
@@ -125,6 +153,7 @@
     border-radius: 0;
     background: #110F5E;
     padding: 40px 0;
+    width: 100%;
   }
   .root .formTitle {
     color: #FFF;
@@ -169,6 +198,11 @@
   .root .formText {
     display: none;
   }
+  .root .ellipse2 {
+    width: 200px;
+    transform: rotate(0);
+    right: 0;
+  }
   .root .textInput {
     border-radius: 15px;
     background: #D9D9D9;
@@ -190,4 +224,4 @@
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.module.css.map */

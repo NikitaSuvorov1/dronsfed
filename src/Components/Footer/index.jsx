@@ -42,7 +42,7 @@ export const Footer = () => {
                     <a href='http://duma.gov.ru/news/duma/'> <img loading={"lazy"} src='assets/scale_1200 1.png'/></a>
                     <a href='https://moscow.sport/'><img loading={"lazy"} src='assets/ms_logo_rgb_1_kras 1.png'/></a>
                     <a href='https://trurez.ru/'><img loading={"lazy"} src='assets/-.png'/></a>
-                    <a href='https://dronesportsglobal.ru/'><img loading={"lazy"} src='assets/drone.png'/></a>
+                    <a href='https://dronesportsglobal.ru/'><img width={150} loading={"lazy"} src='assets/drone.png'/></a>
                 </div>
                 <p className={styles.footerRef}>© 2023-2024 DRFRT</p>
             </div>

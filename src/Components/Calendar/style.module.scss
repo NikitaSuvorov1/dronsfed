@@ -3,6 +3,8 @@
     background-color: #650049;
     margin-top: 100px;
   position: relative;
+
+
   .calendarTitle {
     color: #FFF;
     text-align: center;
@@ -12,28 +14,43 @@
     font-weight: 400;
     line-height: normal;
     margin-top: 20px;
+    z-index: 10;
+    position: relative;
   }
 
   .ellipse1 {
     position: absolute;
-    left: -100px;
-    top: -200px;
+    left: -200px;
+    top: 100px;
+    width: 577.098px;
+    height: 604.284px;
+    transform: rotate(54.593deg);
+    flex-shrink: 0;
+    border-radius: 804.284px;
+    background: linear-gradient(247deg, rgba(20, 0, 255, 0.50) 15.69%, rgba(217, 0, 252, 0.32) 81.51%);
+    filter: blur(100px);
   }
 
   .ellipse2 {
     position: absolute;
     right: -100px;
-    height: 500px;
-    width: 400px;
-    margin-top: 400px;
+    margin-top: 100px;
+    width: 577.098px;
+    height: 500.368px;
+    flex-shrink: 0;
+    border-radius: 660.368px;
+    background: linear-gradient(247deg, rgba(20, 0, 255, 0.50) 15.69%, rgba(217, 0, 252, 0.32) 81.51%);
+
+    filter: blur(100px);
   }
 
   .calendarForm {
     background: linear-gradient(180deg, #1A198A 0%, #000 100%);
     min-height: 500px;
     border-radius: 84px;
-    margin-top: 100px;
     position: relative;
+    width: 90%;
+    margin: 150px auto;
   }
 
 
@@ -76,7 +93,6 @@
     background-color: #650049;
     margin: 0 auto;
 
-
     .calendarTitle {
       display: block;
       color: #FFF;
@@ -105,6 +121,7 @@
       background: linear-gradient(180deg, #1A198A 0%, #000 100%);
       margin-top: 30px;
       border-radius: 0;
+      width: 100%;
     }
 
 

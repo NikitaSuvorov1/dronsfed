@@ -15,7 +15,7 @@ export const Dropdown = ({title, content}) => {
                 <label onClick={openTab}>
                     {title}
                 </label>
-                <img className='plus' src='assets/plyus_2c2dum2oaa6c_64 1.png'/></div>
+                <img onClick={openTab} className='plus' src='assets/plyus_2c2dum2oaa6c_64 1.png'/></div>
 
             <div className="tab-content">
                 <p>{content}</p>

@@ -55,6 +55,8 @@ export const Form = () => {
     return (
         <div className={styles.root}>
             <p className={styles.formTitle}>Часто задаваемые вопросы</p>
+            <div className={styles.ellipse1} />
+            <div className={styles.ellipse2} />
             <div className={styles.formContainer}>
                 <p className={styles.formText}>Выберите из предложенного</p>
                 {tabs.map((obj) =>

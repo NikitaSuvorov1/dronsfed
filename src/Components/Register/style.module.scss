@@ -8,18 +8,34 @@
     border-radius: 84px;
     background: #110F5E;
     z-index: 10;
+    width: 90%;
+    margin: 0 auto;
   }
 
 
   .ellipse1 {
     position: absolute;
     right: 0;
+    width: 600px;
+    height: 440px;
+    flex-shrink: 0;
+    border-radius: 720px;
+    background: linear-gradient(247deg, rgba(219, 0, 255, 0.50) 15.69%, rgba(252, 0, 30, 0.32) 81.51%);
+    margin-top: 100px;
+    filter: blur(100px);
   }
 
   .ellipse2 {
     position: absolute;
-    left: -50%;
-    margin-top: 150px;
+    width: 615.575px;
+    height: 638.955px;
+    left: -10%;
+    margin-top: 300px;
+    transform: rotate(152.807deg);
+    flex-shrink: 0;
+    border-radius: 638.955px;
+    background: linear-gradient(247deg, rgba(219, 0, 255, 0.50) 15.69%, rgba(252, 0, 30, 0.32) 81.51%);
+    filter: blur(100px);
   }
 
   .formTitle {
@@ -164,6 +180,7 @@
     .formContainer {
       border-radius: 30px;
       background: #110F5E;
+      width: 100%;
     }
 
     .ellipse2 {
