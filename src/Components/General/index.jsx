@@ -1,5 +1,6 @@
 import styles from './style.module.scss'
 import {Link} from "react-scroll";
+import {PhotoBlock} from "../GeneralBlockPhoto";
 
 export const General = () => {
     return (
@@ -14,8 +15,7 @@ export const General = () => {
             </div>
 
             <Link to={'register'} offset={-20} smooth={true}><button className={styles.register}>Присоединиться</button></Link>
-            <img loading={"lazy"} className={styles.boyImg} src='assets/BOY.png'/>
-
+            <PhotoBlock />
 
         </div>
     )

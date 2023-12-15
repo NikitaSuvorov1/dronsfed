@@ -1,5 +1,6 @@
 import styles from './style.module.scss'
 import {lazy} from "react";
+import {CourseBlockPhoto} from "../CourseBlockPhoto";
 export const Course = () => {
     return (
         <div className='course'>
@@ -18,7 +19,7 @@ export const Course = () => {
                         <p className={styles.text1}>Не упустите шанс предоставить вашему ребенку возможность стать
                             техническим гением!</p>
                     </div>
-                    <img loading={"lazy"} src='assets/item 34.png'/>
+                    <CourseBlockPhoto />
                 </div>
                 <p className={styles.courseFooter}>Записаться можно на <a className={styles.href}
                                                                           href='https://tonkorag.ru/school'>tonkorag.ru/school</a>

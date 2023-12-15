@@ -1,0 +1,25 @@
+.root {
+  position: relative;
+  margin-top: 100px;
+  z-index: 10;
+}
+.root .block {
+  width: 415.104px;
+  height: 242.05px;
+  flex-shrink: 0;
+  border-radius: 58px;
+  background: var(--cyberpunk-gradient, linear-gradient(263deg, #FF0 13.57%, #00FFD1 83.02%));
+}
+.root img {
+  position: absolute;
+  top: -144px;
+  left: -20px;
+}
+
+@media screen and (max-width: 500px) {
+  .root {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.module.css.map */
