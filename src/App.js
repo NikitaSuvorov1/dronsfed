@@ -14,6 +14,8 @@ import {Element} from 'react-scroll'
 import ImageFollowCursor from "./followElement";
 import FollowCursor from "./followElement";
 import ScrollToTopButton from "./Components/ScrollToTopButton";
+import SliderBlock from "./Components/NewsSlider";
+import {News} from "./Components/News";
 
 
 function App() {
@@ -38,8 +40,10 @@ function App() {
             <div className={styles.container2}>
                 <Calendar/>
                 <Course/>
+
             </div>
             <div className={styles.container3}>
+                {/*<News />*/}
                 <Register/>
                 <Form/>
                 <Footer/>

@@ -2,22 +2,35 @@ import styles from './style.module.scss'
 import {Dropdown} from "../Dropdown";
 import { useForm } from "react-hook-form"
 import axios from "axios";
+import {useEffect} from "react";
 export const Form = () => {
 
-    const { register, handleSubmit } = useForm()
+    const {
+        register,
+        handleSubmit,
+        formState,
+        formState: {isSubmitSuccessful},
+        reset
+    } = useForm({defaultValues: {"firstName": "", "message": "", "email": ""}})
+
     const onSubmit = (data) => {
-        console.log(data)
         try {
-            axios.post('http://kevin12312312.pythonanywhere.com/faq/',data).then((res) => {
-                console.log(res)
+            axios.post("https://fdgrtcalendar.ru/faq/", data).then((res) => {
+                alert("Ваш вопрос отправлен!")
             })
-        } catch (error)  {
+        } catch (error) {
             console.log(error)
         }
-
-
-
     }
+
+    useEffect(() => {
+        if (formState.isSubmitSuccessful) {
+            reset({ "email": '', "firstName":"","message":"" });
+        }
+    }, [reset,isSubmitSuccessful,formState])
+
+
+
 
     const tabs = [
         {
@@ -62,7 +75,7 @@ export const Form = () => {
                 {tabs.map((obj) =>
                     <Dropdown title={obj.title} content={obj.description} />
                 )}
-                <form onSubmit={handleSubmit(onSubmit)}   className={styles.form}>
+                <form onSubmit={handleSubmit(onSubmit)}  className={styles.form}>
                     <p className={styles.questions}>Остались вопросы?</p>
                     <input className={styles.nameInput} {...register("firstName")} type={"text"} placeholder={"Имя"}/>
                     <input className={styles.emailInput} type={"text"} {...register("email")} placeholder={"E-mail"}/>

@@ -1,16 +1,35 @@
 import styles from './style.module.scss'
 import {Dropdown} from "../Dropdown";
-import { useForm } from "react-hook-form"
+import {useForm} from "react-hook-form"
 import axios from "axios";
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import {log} from "util";
+
 export const Register = () => {
 
-    const { register, handleSubmit } = useForm()
-    const [userData,setUserData] = useState({})
-    // const onSubmit = (data) => {
-    //     setUserData(data)
-    //     axios.post('http://kevin12312312.pythonanywhere.com/faq/',data)
-    // }
+    const {
+        register,
+        handleSubmit,
+        formState,
+        formState: {isSubmitSuccessful},
+        reset
+    } = useForm({defaultValues: {"firstName": "", "surname": "", "emailOrTg": "","phone":""}})
+
+    const onSubmit = (data) => {
+        try {
+            axios.post("https://fdgrtcalendar.ru/takepart/", data).then((res) => {
+                alert("Успешная регистрация ")
+            })
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    useEffect(() => {
+        if (formState.isSubmitSuccessful) {
+            reset({ "emailOrTg": '', "firstName":"","surname":"","phone":"" });
+        }
+    }, [reset,isSubmitSuccessful,formState])
 
     const tabs = [
         {
@@ -48,21 +67,25 @@ export const Register = () => {
     return (
         <div className='register'>
             <div className={styles.form}>
-            <p className={styles.formTitle}>Присоединяйся к нам!</p>
-                <div className={styles.ellipse1} />
-                <div className={styles.ellipse2}  />
-            <div className={styles.formContainer}>
+                <p className={styles.formTitle}>Присоединяйся к нам!</p>
+                <div className={styles.ellipse1}/>
+                <div className={styles.ellipse2}/>
+                <div className={styles.formContainer}>
 
-                <form  className={styles.form}>
-                    <p className={styles.RegisterSubtitle}>Вступить в Федерацию гонок дронов
-                        Республики Татарстан</p>
-                    <input className={styles.nameInput} {...register("firstName")} type={"text"} placeholder={"Имя"}/>
-                    <input className={styles.nameInput} {...register("surName")} type={"text"} placeholder={"Фамилия"}/>
-                    <input className={styles.nameInput} type={"text"} {...register("email")} placeholder={"E-mail"}/>
-                    <input className={styles.nameInput} type={"text"} {...register("phone")} placeholder={"Телефон"}/>
-                    <button className={styles.submitButton}>Отправить</button>
-                </form>
-            </div>
+                    <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+                        <p className={styles.RegisterSubtitle}>Вступить в Федерацию гонок дронов
+                            Республики Татарстан</p>
+                        <input className={styles.nameInput} {...register("firstName")} type={"text"}
+                               placeholder={"Имя"}/>
+                        <input className={styles.nameInput} {...register("surname")} type={"text"}
+                               placeholder={"Фамилия"}/>
+                        <input className={styles.nameInput} type={"text"} {...register("emailOrTg")}
+                               placeholder={"E-mail или Telegram"}/>
+                        <input className={styles.nameInput} type={"text"} {...register("phone")}
+                               placeholder={"Телефон"}/>
+                        <button className={styles.submitButton}>Отправить</button>
+                    </form>
+                </div>
             </div>
         </div>
     )
