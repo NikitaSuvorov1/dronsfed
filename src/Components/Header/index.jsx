@@ -23,8 +23,8 @@ export const Header = () => {
     return (
         <div className={styles.root}>
             <div className={styles.menu}>
-                <Link to={'general'} smooth={true}><img loading={"lazy"} className={styles.logo} width={130}
-                                                        height={110} src='assets/mainLogo.png'/></Link>
+                <Link to={'general'} smooth={true}><img loading={"lazy"} className={styles.logo} width={150}
+                                                        height={150} src='assets/mainLogo.png'/></Link>
                 <div className={styles.tabs}>
                     {tabs.map((tab) => (
                         <Link offset={-130} to={tab.name} smooth={true}><p key={tab.section} className={styles.tags}>
