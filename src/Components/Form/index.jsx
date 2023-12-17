@@ -11,12 +11,12 @@ export const Form = () => {
         formState,
         formState: {isSubmitSuccessful},
         reset
-    } = useForm({defaultValues: {"firstName": "", "message": "", "email": ""}})
+    } = useForm({defaultValues: {"firstName": "", "message": "", "emailOrTg": ""}})
 
     const onSubmit = (data) => {
         try {
             axios.post("https://fdgrtcalendar.ru/faq/", data).then((res) => {
-                alert("Ваш вопрос отправлен!")
+                alert("Спасибо за ваш вопрос!В ближайшие 3 дня обратная связь придет на вашу почту или телеграм!")
             })
         } catch (error) {
             console.log(error)
@@ -25,7 +25,7 @@ export const Form = () => {
 
     useEffect(() => {
         if (formState.isSubmitSuccessful) {
-            reset({ "email": '', "firstName":"","message":"" });
+            reset({ "emailOrTg": '', "firstName":"","message":"" });
         }
     }, [reset,isSubmitSuccessful,formState])
 
@@ -78,7 +78,7 @@ export const Form = () => {
                 <form onSubmit={handleSubmit(onSubmit)}  className={styles.form}>
                     <p className={styles.questions}>Остались вопросы?</p>
                     <input className={styles.nameInput} {...register("firstName")} type={"text"} placeholder={"Имя"}/>
-                    <input className={styles.emailInput} type={"text"} {...register("email")} placeholder={"E-mail"}/>
+                    <input className={styles.emailInput} type={"text"} {...register("emailOrTg")} placeholder={"E-mail или Telegram"}/>
                     <textarea className={styles.textInput} type={"text"} {...register("message")}  placeholder={"Ваше сообщение"}/>
                     <button className={styles.submitButton}>Отправить</button>
                 </form>

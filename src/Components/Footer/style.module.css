@@ -188,6 +188,9 @@
   .footer .footerSponsors img {
     padding: 10px;
   }
+  .footer .footerSponsors p {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1000px) {
   .footerSponsors {

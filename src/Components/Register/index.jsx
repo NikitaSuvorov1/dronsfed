@@ -18,7 +18,7 @@ export const Register = () => {
     const onSubmit = (data) => {
         try {
             axios.post("https://fdgrtcalendar.ru/takepart/", data).then((res) => {
-                alert("Успешная регистрация ")
+                alert("Заявка отправлена! Мы с вами свяжемся в ближайшее время.")
             })
         } catch (error) {
             console.log(error)
