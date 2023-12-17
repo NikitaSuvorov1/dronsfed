@@ -4,34 +4,34 @@ import axios from "axios";
 
 export const Calendar = () => {
 
-    // const [data, setData] = useState()
+    const [data, setData] = useState()
 
-    // const fetchData = async () => {
-    //     const res = await axios.get('https://fdgrtcalendar.ru/')
-    //     console.log(res)
-    //     setData(res)
-    //     }
-    //
-    //
-    // console.log(data)
-    //
-    // useEffect(() => {
-    //     fetchData()
-    // }, [])
+    const fetchData = async () => {
+        const {data} = await axios.get('https://fdgrtcalendar.ru/events/')
+        console.log(data)
+        setData(data)
+        }
 
-    const data = [{
-        "dateTime":"20 декабря",
-        "summary": "Турнир дронов РТ"
-    },
-        {
-            "dateTime":"20 января",
-            "summary": "Турнир дронов РТ"
-        },
-        {
-            "dateTime":"20 февраля",
-            "summary": "Турнир дронов РТ"
-        },
-    ]
+
+    console.log(data)
+
+    useEffect(() => {
+        fetchData()
+    }, [])
+
+    // const data = [{
+    //     "dateTime":"20 декабря",
+    //     "summary": "Турнир дронов РТ"
+    // },
+    //     {
+    //         "dateTime":"20 января",
+    //         "summary": "Турнир дронов РТ"
+    //     },
+    //     {
+    //         "dateTime":"20 февраля",
+    //         "summary": "Турнир дронов РТ"
+    //     },
+    // ]
 
 
     return (

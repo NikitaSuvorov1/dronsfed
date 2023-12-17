@@ -39,10 +39,9 @@ export const Footer = () => {
                 </div>
                 <div className={styles.footerSponsors}>
                     <a href='https://minsport.gov.ru/'><img loading={"lazy"} src='assets/minsport 1.png'/></a>
-                    <a href='http://duma.gov.ru/news/duma/'> <img loading={"lazy"} src='assets/scale_1200 1.png'/></a>
-                    <a href='https://moscow.sport/'><img loading={"lazy"} src='assets/ms_logo_rgb_1_kras 1.png'/></a>
-                    <a href='https://trurez.ru/'><img loading={"lazy"} src='assets/-.png'/></a>
-                    <a href='https://dronesportsglobal.ru/'><img width={150} loading={"lazy"} src='assets/drone.png'/></a>
+                    <img src='/assets/mainLogo.png' width={150}  />
+                    <a href='https://minsport.tatarstan.ru/'><img src='/assets/logoFedRT.png' width={300} /></a>
+                    <p>Команда пилотов команды "АкБарс"</p>
                 </div>
                 <p className={styles.footerRef}>© 2023-2024 DRFRT</p>
             </div>
