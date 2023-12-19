@@ -9,6 +9,7 @@ import {Footer} from "./Components/Footer";
 import {Register} from "./Components/Register";
 import ScrollToTopButton from "./Utils/ScrollToTopButton";
 import {News} from "./Components/News";
+import {Analytics} from "@vercel/analytics/react";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
     return (
         <div className={styles.root}>
+            <Analytics />
             <div className={styles.container_header}>
                 <Header/>
             </div>
