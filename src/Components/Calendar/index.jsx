@@ -13,25 +13,12 @@ export const Calendar = () => {
         }
 
 
-    console.log(data)
 
     useEffect(() => {
         fetchData()
     }, [])
 
-    // const data = [{
-    //     "dateTime":"20 декабря",
-    //     "summary": "Турнир дронов РТ"
-    // },
-    //     {
-    //         "dateTime":"20 января",
-    //         "summary": "Турнир дронов РТ"
-    //     },
-    //     {
-    //         "dateTime":"20 февраля",
-    //         "summary": "Турнир дронов РТ"
-    //     },
-    // ]
+
 
 
     return (
@@ -39,11 +26,11 @@ export const Calendar = () => {
             <div className={styles.root}>
             <span className={styles.calendarTitle}>Календарь
                 мероприятий</span>
-                <div loading={"lazy"} className={styles.ellipse1}  />
-                <div loading={"lazy"} className={styles.ellipse2} />
+                <div  className={styles.ellipse1}  />
+                <div  className={styles.ellipse2} />
                 <div className={styles.calendarForm}>
-                    {data ? data.map((obj) => (
-                        <div key={obj.title} className={styles.event}>
+                    {data ? data?.map((obj) => (
+                        <div key={obj.title}>
                             <div className={styles.eventText}>
                                 <p  className={styles.eventDate}>
                                     {obj.dateTime}

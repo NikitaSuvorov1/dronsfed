@@ -1,10 +1,10 @@
-import {Slider} from "../NewsSlider";
 import style from './style.module.scss'
+import {Slider} from "../NewsCarousel";
 
 export const News = () => {
     return (
         <div className={style.root}>
-            <span>Новости</span>
+            <h1>Новости</h1>
             <Slider />
         </div>
     )

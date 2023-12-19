@@ -1,7 +1,7 @@
 .root {
-  margin-top: 100px;
+  margin-top: 200px;
 }
-.root span {
+.root h1 {
   color: #FFF;
   margin-bottom: 50px;
   text-align: center;

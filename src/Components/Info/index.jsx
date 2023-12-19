@@ -1,5 +1,5 @@
 import styles from './style.module.scss'
-import {Card} from "../Card";
+import {Card} from "../InfoCard";
 
 export const Info = () => {
 

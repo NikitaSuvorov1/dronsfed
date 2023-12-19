@@ -19,18 +19,12 @@ const ScrollToTopButton = () => {
         }
     };
 
-    // const scrollToTop = () => {
-    //     window.scrollTo({
-    //         top: 0,
-    //         behavior: 'smooth',
-    //     });
-    // };
+
 
     return (
         <div>
             <Link smooth={true} to={'general'}>
                 <img loading={"lazy"} src='/assets/toTopBtn.png' className={`scroll-to-top-button ${isVisible ? 'visible' : ''}`} >
-                    {/*<i className="fa fa-arrow-up"/>*/}
                 </img>
             </Link>
         </div>
