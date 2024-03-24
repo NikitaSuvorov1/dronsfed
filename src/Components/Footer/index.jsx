@@ -15,7 +15,7 @@ export const Footer = () => {
                         <p className={styles.footerText}>Следите за гонками дронов в социальных сетях</p>
                         <div className={styles.socialwebs}>
                             <img className={styles.footerLogo} src='assets/mainLogo.png'/>
-                            <a href='https://vk.com/club223653806'> <img loading={"lazy"} src='assets/VK.png'/></a>
+                            <a href='https://vk.com/club225210731'> <img loading={"lazy"} src='assets/VK.png'/></a>
                             <a href='https://t.me/tatarstan_drons'><img loading={"lazy"} src='assets/TELEGRAM.png'/></a>
                             <a href='https://www.youtube.com/channel/UCUXqBaImWzbHHFMTUsGWAEQ'><img loading={"lazy"}
                                 src='assets/YOUTUBE.png'/></a>
